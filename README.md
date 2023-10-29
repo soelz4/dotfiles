@@ -7,10 +7,8 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 |WM|[BSPWM](https://github.com/baskerville/bspwm)|
 |Bar|[Polybar](https://github.com/polybar/polybar)|
 |Menu|[Rofi](https://github.com/davatorium/rofi)|
-|Compositor|[Picom](https://archlinux.org/packages/community/x86_64/picom/)|
-|Terminal|[Alacritty](https://github.com/alacritty/alacritty)|
-|Widgets|[ElKowars wacky widgets ](https://github.com/elkowar/eww)|
-|Music/Player|[mpd](https://archlinux.org/packages/extra/x86_64/mpd/)-[ncmpcpp](https://archlinux.org/packages/community/x86_64/ncmpcpp/)|
-|File Manager|[Thunar](https://archlinux.org/packages/extra/x86_64/thunar/)|
-|Shell|[Zsh](https://archlinux.org/packages/extra/x86_64/zsh/)|
-|Aur Helper|[Paru](https://github.com/Morganamilo/paru)|
+|Compositor|[Picom](https://github.com/yshui/picom)|
+|Terminal|[Kitty](https://sw.kovidgoyal.net/kitty/)|
+|File Manager|[Thunar](https://gitlab.xfce.org/xfce/thunar)|
+|Shell|[Bash](https://www.gnu.org/software/bash/)|
+|Aur Helper|[Yay](https://github.com/Jguer/yay)|

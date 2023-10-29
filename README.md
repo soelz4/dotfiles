@@ -11,5 +11,6 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 |Terminal|[Kitty](https://sw.kovidgoyal.net/kitty/)|
 |Editor|[Vim](https://www.vim.org/)|
 |File Manager|[Thunar](https://gitlab.xfce.org/xfce/thunar)|
+|System Monitor|[Conky](https://github.com/brndnmtthws/conky)|
 |Shell|[Bash](https://www.gnu.org/software/bash/)|
 |Aur Helper|[Yay](https://github.com/Jguer/yay)|

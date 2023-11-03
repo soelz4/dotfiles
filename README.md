@@ -1,8 +1,10 @@
 # dotfiles
 Customization Files for Linux or Other Unix-Based System. This Repository Contains My Personal Dotfiles.
 
-## Info
+## Screenshot
 ![alt text](https://github.com/soelz4/dotfiles/blob/5a4c72fabb54be7bc57bfe3d21ace3380d70b46b/screenshot_scrot.png)
+
+## Info
 |Distro|[Arch](https://archlinux.org/)|
 |:---:|:---:|
 |WM|[BSPWM](https://github.com/baskerville/bspwm)|

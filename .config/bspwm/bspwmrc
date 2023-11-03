@@ -6,22 +6,21 @@ picom --experimental-backend &
 sleep 3 && conky -c "$HOME"/.config/conky/bspwm/doom-one-01.conkyrc
 
 # Bar
-pkill polybar
 $HOME/.config/polybar/launch.sh
 
 # Monitor
 bspc monitor -d I II III IV V VI VII VIII IX
 
 # Configs
-bspc config border_width                0
-bspc config window_gap                  8
+bspc config border_width				0
+bspc config window_gap					8
 bspc config split_ratio					0.50
 bspc config top_padding					0
 bspc config bottom_padding				0
 bspc config left_padding				0
 bspc config right_padding				0
 bspc config border_width				1
-bspc config borderless_monocle          true
+bspc config borderless_monocle			true
 bspc config gapless_monocle				true
 bspc config pointer_follows_focus		true
 bspc config focus_follows_pointer		true

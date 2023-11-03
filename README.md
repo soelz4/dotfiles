@@ -2,7 +2,7 @@
 Customization Files for Linux or Other Unix-Based System. This Repository Contains My Personal Dotfiles.
 
 ## Screenshot
-![alt text](https://github.com/soelz4/dotfiles/blob/5a4c72fabb54be7bc57bfe3d21ace3380d70b46b/screenshot_scrot.png)
+![alt text](https://github.com/soelz4/dotfiles/blob/7abc91d3983e1ed60d0b804335ede52ad77c47f0/screenshot_scrot-0.png)
 
 ## Info
 |Distro|[Arch](https://archlinux.org/)|

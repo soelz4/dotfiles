@@ -7,10 +7,9 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 <details>
 <summary><b>Extra Screenshots</b></summary>
 
-|<img src="screenshots/screenshot_scrot-2.png" alt="Extra Screenshots" align="center" width="150px">|<img src="screenshots/screenshot_scrot-1.png" alt="Extra Screenshots" align="center" width="150px">|<img src="screenshots/screenshot_scrot-3.png" alt="Extra Screenshots" align="center" width="150px">|<img src="screenshots/screenshot_scrot-4.png" alt="Extra Screenshots" align="center" width="150px">|
+|<img src="screenshots/screenshot_scrot-2.png" alt="Extra Screenshots" align="center" width="150px">|<img src="screenshots/screenshot_scrot-1.png" alt="Extra Screenshots" align="center" width="150px">|<img src="screenshots/screenshot_scrot-3.png" alt="Extra Screenshots" align="center" width="150px">|
 |:-:|:-:|:-:|
-|<img src="screenshots/screenshot_scrot-2.png" alt="Extra Screenshots" align="center" width="150px">|<img src="screenshots/screenshot_scrot-1.png" alt="Extra Screenshots" align="center" width="150px">|<img src="screenshots/screenshot_scrot-3.png" alt="Extra Screenshots" align="center" width="150px">|<img src="screenshots/screenshot_scrot-4.png" alt="Extra Screenshots" align="center" width="150px">|
-
+|<img src="screenshots/screenshot_scrot-2.png" alt="Extra Screenshots" align="center" width="150px">|<img src="screenshots/screenshot_scrot-1.png" alt="Extra Screenshots" align="center" width="150px">|<img src="screenshots/screenshot_scrot-3.png" alt="Extra Screenshots" align="center" width="150px">|
 
 </details>
 

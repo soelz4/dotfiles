@@ -54,7 +54,7 @@ conky.config = {
 
 	--Textual
 	format_human_readable = true,				-- KiB, MiB rather then number of bytes
-	font  = 'Source Code Pro:bold:size=10',  	-- the default font used
+	font  = 'Sauce Code Pro Nerd Font:bold:size=10',  -- the default font used
 	font2 = 'Raleway:bold:size=30',         	-- font for the time
 	font3 = 'Ubuntu:size=14',               	-- font for the date
 	font4 = 'Raleway:bold:size=9',              -- font for the keybindings heading
@@ -108,8 +108,8 @@ ${color1}[S]+[SPACE]${alignr}${color2}rofi${color}
 ${color1}[S]+w${alignr}${color2}close window/kill process${color}
 ${color1}[S]+[ALT]+q${alignr}${color2}quit/restart bspwm${color}
 ${color1}[S]+m${alignr}${color2}fullscreen toggle${color}
-${color1}[S]+[0-9]${alignr}${color2}switch workspace${color}
-${color1}[S]+[SHIFT]+[0-9]${alignr}${color2}send window${color}
+${color1}[S]+[1-9]${alignr}${color2}switch workspace${color}
+${color1}[S]+[SHIFT]+[1-9]${alignr}${color2}send window${color}
 ${color1}Ctrl+Alt+h/l${alignr}${color2}shrink/expand${color}
 ${color1}${hr}${color}
 ]];

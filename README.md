@@ -7,7 +7,7 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 <details>
 <summary><b>Extra Screenshots</b></summary>
   
-|![alt text](https://github.com/soelz4/dotfiles/blob/40773933b2ae817e5aca141ae1c30014c47548d9/screenshots/screenshot_scrot-1.png)|![alt text](https://github.com/soelz4/dotfiles/blob/40773933b2ae817e5aca141ae1c30014c47548d9/screenshots/screenshot_scrot-2.png)|![alt text](https://github.com/soelz4/dotfiles/blob/40773933b2ae817e5aca141ae1c30014c47548d9/screenshots/screenshot_scrot-3.png)|![alt text](https://github.com/soelz4/dotfiles/blob/40773933b2ae817e5aca141ae1c30014c47548d9/screenshots/screenshot_scrot-4.png)|
+![alt text](https://github.com/soelz4/dotfiles/blob/40773933b2ae817e5aca141ae1c30014c47548d9/screenshots/screenshot_scrot-1.png)![alt text](https://github.com/soelz4/dotfiles/blob/40773933b2ae817e5aca141ae1c30014c47548d9/screenshots/screenshot_scrot-2.png)![alt text](https://github.com/soelz4/dotfiles/blob/40773933b2ae817e5aca141ae1c30014c47548d9/screenshots/screenshot_scrot-3.png)![alt text](https://github.com/soelz4/dotfiles/blob/40773933b2ae817e5aca141ae1c30014c47548d9/screenshots/screenshot_scrot-4.png)
 
 </details>
 

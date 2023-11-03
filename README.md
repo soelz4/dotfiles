@@ -20,6 +20,7 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 |Compositor|[Picom](https://github.com/yshui/picom)|
 |Terminal|[Kitty](https://sw.kovidgoyal.net/kitty/)|
 |Editor|[Vim](https://www.vim.org/)|
+|Browser|[FireFox](https://www.mozilla.org/en-US/firefox/new/)|
 |File Manager|[Ranger](https://ranger.github.io/)|
 |System Monitor|[Conky](https://github.com/brndnmtthws/conky)|
 |Shell|[Bash](https://www.gnu.org/software/bash/)|

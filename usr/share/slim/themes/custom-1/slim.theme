@@ -1,0 +1,38 @@
+# Messages (ie: shutdown)
+
+msg_color               #7678ff
+msg_font                FiraCode Nerd Font:size=18:bold:dpi=75
+msg_x                   50%
+msg_y                   30%
+
+# Session Name
+
+session_color           #b125ef
+session_font            FiraCode Nerd Font:size=16:bold:dpi=75
+session_x               50%
+session_y               95%
+
+# valid values: stretch, tile
+
+background_style        stretch
+background_color        #f2f2f2
+
+# Input controls
+
+input_panel_x           50%
+input_panel_y           50%
+input_name_x            210
+input_name_y            309
+input_pass_x            210
+input_pass_y            387
+input_font              FiraCode Nerd Font:size=14:dpi=75
+input_color             #f9f9f9
+
+username_msg
+password_msg
+
+# Authentication
+
+password_feedback_x     50%
+password_feedback_y     30%
+password_feedback_msg   Authentication failed

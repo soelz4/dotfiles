@@ -124,10 +124,18 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
+# Screenshot Full
+Print
+	scrot
+
 # volume control
 XF86AudioLowerVolume
 	amixer set Master 2%-
 XF86AudioRaiseVolume
 	amixer set Master 2%+
 XF86AudioMute
-        amixer set Master toggle
+	amixer set Master toggle
+
+# Toggle right click context menu.
+~button3
+	xqp 0 $(xdo id -N Bspwm -n root) && jgmenu_run

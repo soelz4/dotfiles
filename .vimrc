@@ -25,6 +25,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'sainnhe/everforest'
 " dracula
 Plug 'dracula/vim', {'as': 'dracula'}
+" rose pine
+Plug 'rose-pine/vim'
 
 call plug#end()
 
@@ -40,7 +42,7 @@ let g:rustfmt_autosave = 1
 let g:everforest_background = 'soft'
 let g:everforest_better_performance = 1
 let &t_ut=''
-colorscheme everforest
+colorscheme rosepine_moon
 set tabstop=4
 set shiftwidth=4
 set number

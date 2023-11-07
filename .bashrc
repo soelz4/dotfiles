@@ -24,6 +24,12 @@ reset=$(tput sgr0)
 # prompt
 PS1="\[$green\]\u\[$reset\]@\[$cyan\]\h \[$reset\]// \[$purple\]\w \[$reset\]>> \[$purple\]\\n$\[$reset\] "
 
+# git prompt
+if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
+    GIT_PROMPT_ONLY_IN_REPO=1
+    source "$HOME/.bash-git-prompt/gitprompt.sh"
+fi
+
 # exa
 alias ls="exa --long --all --icons --header"
 

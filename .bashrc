@@ -42,5 +42,8 @@ alias neofetch="neofetch --kitty"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+# blesh
+# [[ $- == *i* ]] && source /usr/share/blesh/ble.sh
+
 # fish shell
 # exec fish

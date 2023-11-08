@@ -15,7 +15,7 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 
 ## Info
 
-<img src="screenshots/screenshot_scrot-1.png" alt="Linux Fetch" align="right" width="150px">
+<img src="screenshots/screenshot_scrot-1.png" alt="Linux Fetch" align="right" width="450px">
 
 * **Distro** - **[Arch Linux](https://archlinux.org/)**.
 * **WM** - [BSPWM](https://github.com/baskerville/bspwm).

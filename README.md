@@ -14,6 +14,12 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 </details>
 
 ## Info
+* **Distro** - **[Arch Linux]** (https://archlinux.org/).
+* **Kitty** as the terminal.
+* **Kitty** as the terminal.
+* **Kitty** as the terminal.
+* **Kitty** as the terminal.
+* **Kitty** as the terminal.
 |Distro|[Arch](https://archlinux.org/)|
 |:---:|:---:|
 |WM|[BSPWM](https://github.com/baskerville/bspwm)|

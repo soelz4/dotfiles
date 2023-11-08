@@ -14,7 +14,7 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 </details>
 
 ## Info
-* **Distro** - [Arch](https://archlinux.org/)
+* **Distro** - [Arch Linux](https://archlinux.org/)
 * **Kitty** as the terminal.
 * **Kitty** as the terminal.
 * **Kitty** as the terminal.

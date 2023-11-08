@@ -31,3 +31,5 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 * **System Monitor** - [Conky](https://github.com/brndnmtthws/conky).
 * **Shell** - [Bash](https://www.gnu.org/software/bash/).
 * **Aur Helper** - [Yay](https://github.com/Jguer/yay).
+
+## Requirements

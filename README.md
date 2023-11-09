@@ -2,7 +2,7 @@
 Customization Files for Linux or Other Unix-Based System. This Repository Contains My Personal Dotfiles.
 
 ## Screenshot
-![alt text](https://github.com/soelz4/dotfiles/blob/ac19d0172cac98f80619b40ef2d3a5b88181e2ce/screenshots/screenshot_scrot-0.png)
+![alt text](https://github.com/soelz4/dotfiles/blob/a486465bcb695d9d070883c722813685f22c54b2/screenshots/screenshot_scrot-0.png)
 
 <details>
 <summary><b>Extra Screenshots</b></summary>

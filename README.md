@@ -5,7 +5,7 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 ![alt text](https://github.com/soelz4/dotfiles/blob/db58dbbea0dcb3ef41d3305ee74dea0dda96bba6/screenshots/screenshot-0.png)
 
 ## Info
-<img src="screenshots/screenshot-1.png" alt="Linux Fetch" align="right" width="520px">
+<img src="screenshots/screenshot-1.png" alt="Linux Fetch" align="right" width="550px">
 
 * **Distro** - **[Artix Linux](https://artixlinux.org/)**.
 * **System Init** - [runit](http://smarden.org/runit/).

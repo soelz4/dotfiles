@@ -17,7 +17,8 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 
 <img src="screenshots/screenshot_scrot-1.png" alt="Linux Fetch" align="right" width="550px">
 
-* **Distro** - **[Arch Linux](https://archlinux.org/)**.
+* **Distro** - **[Artix Linux](https://artixlinux.org/)**.
+* **System Init** - [runit](http://smarden.org/runit/).
 * **WM** - [BSPWM](https://github.com/baskerville/bspwm).
 * **Bar** - [Polybar](https://github.com/polybar/polybar).
 * **Menu** - [Rofi](https://github.com/davatorium/rofi).

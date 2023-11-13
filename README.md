@@ -25,12 +25,9 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 * **Terminal** - [Kitty](https://sw.kovidgoyal.net/kitty/).
 * **Editor** - [Vim](https://www.vim.org/).
 * **Browser** - [FireFox](https://www.mozilla.org/en-US/firefox/new/).
-* **File Manager** - [Ranger](https://ranger.github.io/).
-* **Display Manager** - [Slim](https://slim-fork.sourceforge.io/).
 * **Desktop Root Menu** - [jgmenu](https://jgmenu.github.io/).
 * **System Monitor** - [Conky](https://github.com/brndnmtthws/conky).
 * **Shell** - [Bash](https://www.gnu.org/software/bash/).
-* **Aur Helper** - [Yay](https://github.com/Jguer/yay).
 
 ## Requirements
 

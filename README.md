@@ -17,7 +17,7 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 * **Terminal** - [Kitty](https://sw.kovidgoyal.net/kitty/).
 * **Editor** - [Vim](https://www.vim.org/).
 * **System Monitor** - [Conky](https://github.com/brndnmtthws/conky).
-* **AUR Helper** - [yay](https://github.com/Jguer/yay).
+* **AUR Helper** - [Yay](https://github.com/Jguer/yay).
 
 
 ## Requirements

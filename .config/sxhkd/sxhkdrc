@@ -136,6 +136,14 @@ XF86AudioRaiseVolume
 XF86AudioMute
 	amixer set Master toggle
 
+# Brightness Up
+XF86MonBrightnessUp
+	light -A 5
+
+# Brightness Down
+XF86MonBrightnessDown
+	light -U 5
+
 # Toggle right click context menu.
 ~button3
 	xqp 0 $(xdo id -N Bspwm -n root) && jgmenu_run

@@ -9,6 +9,7 @@ Music Player,rhythmbox,/home/soheil/.config/jgmenu/MenuIcons/music.png
 ^sep()
 Applications,^checkout(lx-apps),/home/soheil/.config/jgmenu/MenuIcons/applications.png
 Launcher,rofi -show drun,/home/soheil/.config/jgmenu/MenuIcons/dashboard.png
+System Monitor,kitty htop,/home/soheil/.config/jgmenu/MenuIcons/system-menu.png
 ^sep()
 BSPWM,^checkout(bspwm),/home/soheil/.config/jgmenu/MenuIcons/bspwm.png
 

@@ -22,7 +22,7 @@ default=$(tput setaf 9)
 reset=$(tput sgr0)
 
 # prompt
-PS1="\[$green\]\u\[$reset\]@\[$cyan\]\h \[$reset\]// \[$purple\]\w \[$reset\]>> \[$purple\]\$\[$reset\] "
+PS1="\[$reset\]╭─\[$green\]\u\[$reset\]@\[$cyan\]\h \[$reset\]// \[$purple\]\w \[$reset\]\n╰─\[$reset\]>> \[$purple\]\$\[$reset\] "
 
 # git prompt
 if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
@@ -33,11 +33,13 @@ fi
 # exa
 alias ls="exa --long --all --icons --header"
 
+alias cat="bat"
+
 # kitty icat
 alias icat="kitten icat"
 
 # neofetch
-alias neofetch="neofetch --kitty"
+# alias neofetch="neofetch --kitty"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 

@@ -11,30 +11,18 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 ## Info
 <img src="screenshots/scrot-0.png" alt="Linux Fetch" align="right" width="550px">
 
-```mint
-⠀⠀   🌸 Setup / Hyprland 🌸
- -----------------------------------
-
- ╭─ Distro  -> Archcraft x86_64
- ├─ Editor  -> VSCode / NeoVim
- ├─ Browser -> Firefox
- ├─ Shell   -> ZSH
- ╰─ Resource Monitor -> Btop
-
- ╭─ Model -> ASUS TUF Gaming A15
- ├─ CPU   -> Ryzen 7 4800H @ 4.3GHz
- ├─ GPU   -> NVIDIA GeForce RTX 3050
- ╰─ Resolution -> 1920x1080
-
- ╭─ WM       -> Hyprland
- ├─ Terminal -> Kitty
- ├─ Theme    -> Tokyonight-Dark-BL-LB
- ├─ Icons    -> Tokyonight-Moon
- ├─ Font     -> CaskaydiaCove Nerd Font
- ╰─ Hotel    -> Trivago
-
-                        
-```
+* **Distro** - **[Artix Linux](https://artixlinux.org/)**.
+* **System Init** - [runit](http://smarden.org/runit/).
+* **WM** - [BSPWM](https://github.com/baskerville/bspwm).
+* **Bar** - [Polybar](https://github.com/polybar/polybar).
+* **Menu** - [Rofi](https://github.com/davatorium/rofi).
+* **Compositor** - [Picom](https://github.com/yshui/picom).
+* **Shell** - [Bash](https://www.gnu.org/software/bash/).
+* **Terminal** - [Kitty](https://sw.kovidgoyal.net/kitty/).
+* **Editor** - [Vim](https://www.vim.org/).
+* **File Manager** - [Ranger](https://github.com/ranger/ranger).
+* **System Monitor** - [Conky](https://github.com/brndnmtthws/conky).
+* **AUR Helper** - [Yay](https://github.com/Jguer/yay).
 
 ## Requirements
 ```sh

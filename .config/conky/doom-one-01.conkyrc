@@ -110,7 +110,8 @@ ${color1}[S]+[1-9]${alignr}${color2}switch workspace${color}
 ${color1}[S]+[SHIFT]+[1-9]${alignr}${color2}send window${color}
 ${color1}Ctrl+Alt+h/l${alignr}${color2}shrink/expand${color}
 ${color1}${hr}${color}
-${color1}~button3${alignr}${color2}jgmenu${color}
+${color1}Right-Click${alignr}${color2}jgmenu${color}
+${color1}Print${alignr}${color2}scrot${color}
 ${color1}${hr}${color}
 ${color1}[S]+[ALT]+r${alignr}${color2}restart bspwm${color}
 ${color1}[S]+[ALT]+q${alignr}${color2}quit bspwm${color}

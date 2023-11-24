@@ -2,26 +2,53 @@
 # https://github.com/dylanaraps/neofetch/wiki/Customizing-Info
 print_info() {
 
-	info title
-	info underline
+	# info title
+	# info underline
 
-    info "OS" distro
-    info "Host" model
-    info "Kernel" kernel
-    info "Uptime" uptime
-    info "Packages" packages
-    info "Shell" shell
-    info "Resolution" resolution
-    info "DE" de
-    info "WM" wm
-    info "WM Theme" wm_theme
-    info "Theme" theme
-    info "Icons" icons
-    info "Terminal" term
-    info "Terminal Font" term_font
-    info "CPU" cpu
-    info "GPU" gpu
-    info "Memory" memory
+    prin "$(color 7)┌─────────────────────Specs─────────────────────────┐"
+
+    info "${c1}│ ┌󰣇 " distro
+    info "${c1}│ ├ " kernel
+    info "${c1}│ ├󰋜 " model
+    info "${c1}│ ├ " packages
+    info "${c1}│ ├ " shell
+    info "${c1}│ ├ " term
+    info "${c1}│ ├ " de
+    info "${c1}│ └ " wm
+        
+    prin "$(color 7)├───────────────────Customization───────────────────"  
+       
+    info "${c1}│ ${c2}┌󰔎 " theme
+    info "${c1}│ ${c2}├󰂫 " icons
+    info "${c1}│ ${c2}└ " font
+
+    prin "$(color 7)├──────────────────────Hardware──────────────────────"
+    
+    info "${c1}│ ${c2}┌ " cpu
+    info "${c1}│ ${c2}├ " gpu
+    info "${c1}│ ${c2}├ " memory
+    info "${c1}│ ${c2}├󰄉 " uptime
+    info "${c1}│ ${c2}└ " resolution
+	
+    prin "$(color 7)└───────────────────────────────────────────────────┘"
+
+    # info "OS" distro
+    # info "Host" model
+    # info "Kernel" kernel
+    # info "Uptime" uptime
+    # info "Packages" packages
+    # info "Shell" shell
+    # info "Resolution" resolution
+    # info "DE" de
+    # info "WM" wm
+    # info "WM Theme" wm_theme
+    # info "Theme" theme
+    # info "Icons" icons
+    # info "Terminal" term
+    # info "Terminal Font" term_font
+    # info "CPU" cpu
+    # info "GPU" gpu
+    # info "Memory" memory
 
     # info "GPU Driver" gpu_driver  # Linux/macOS only
     # info "CPU Usage" cpu_usage
@@ -35,7 +62,7 @@ print_info() {
     # info "Users" users
     # info "Locale" locale  # This only works on glibc systems.
 
-    info cols
+    # info cols
 }
 
 # Title

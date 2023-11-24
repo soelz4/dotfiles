@@ -26,7 +26,6 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 * **AUR Helper** - [Yay](https://github.com/Jguer/yay).
 
 ## Requirements
-First, you need to add Arch Linux official repository "extra" to your arch mirrorlist.
 ```sh
 git clone https://github.com/soelz4/dotfiles.git
 ```

@@ -26,6 +26,7 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 * **AUR Helper** - [Yay](https://github.com/Jguer/yay).
 
 ## Requirements
+First, you need to add Arch Linux official repository "extra" to your arch mirrorlist.
 ```sh
 git clone https://github.com/soelz4/dotfiles.git
 ```
@@ -33,10 +34,10 @@ git clone https://github.com/soelz4/dotfiles.git
 cd dotfiles
 ```
 ```sh
-sudo pacman -S $(awk '{print $1}' pacman_pkglist.txt)
+chmod +x pkgs.sh
 ```
 ```sh
-sudo yay -S $(awk '{print $1}' aur_pkglist.txt)
+./pkgs.sh
 ```
 
 <br>![cat](https://github-production-user-asset-6210df.s3.amazonaws.com/62666332/253642655-0438a9e1-d47d-4570-873c-5ddd59f46e9e.svg)</br>

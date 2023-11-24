@@ -7,23 +7,34 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 ⚠️ **NOTE!!!!!** This configuration was made for my Laptop, so some things might not work on your PC or Laptop as this was never intended to be a usable full fledged system, in that case, please try if you can fix that up as much as possible, or you can open an issue for help :) - This was made for a **1920x1080** screen and on a **Laptop** with **96** dpi.
 
 ## Screenshot
-![alt text](https://github.com/soelz4/dotfiles/blob/db58dbbea0dcb3ef41d3305ee74dea0dda96bba6/screenshots/screenshot-0.png)
 
 ## Info
-<img src="screenshots/screenshot-1.png" alt="Linux Fetch" align="right" width="550px">
+<img src="screenshots/scrot-0.png" alt="Linux Fetch" align="right" width="550px">
 
-* **Distro** - **[Artix Linux](https://artixlinux.org/)**.
-* **System Init** - [runit](http://smarden.org/runit/).
-* **WM** - [BSPWM](https://github.com/baskerville/bspwm).
-* **Bar** - [Polybar](https://github.com/polybar/polybar).
-* **Menu** - [Rofi](https://github.com/davatorium/rofi).
-* **Compositor** - [Picom](https://github.com/yshui/picom).
-* **Shell** - [Bash](https://www.gnu.org/software/bash/).
-* **Terminal** - [Kitty](https://sw.kovidgoyal.net/kitty/).
-* **Editor** - [Vim](https://www.vim.org/).
-* **File Manager** - [Ranger](https://github.com/ranger/ranger).
-* **System Monitor** - [Conky](https://github.com/brndnmtthws/conky).
-* **AUR Helper** - [Yay](https://github.com/Jguer/yay).
+```mint
+⠀⠀   🌸 Setup / Hyprland 🌸
+ -----------------------------------
+
+ ╭─ Distro  -> Archcraft x86_64
+ ├─ Editor  -> VSCode / NeoVim
+ ├─ Browser -> Firefox
+ ├─ Shell   -> ZSH
+ ╰─ Resource Monitor -> Btop
+
+ ╭─ Model -> ASUS TUF Gaming A15
+ ├─ CPU   -> Ryzen 7 4800H @ 4.3GHz
+ ├─ GPU   -> NVIDIA GeForce RTX 3050
+ ╰─ Resolution -> 1920x1080
+
+ ╭─ WM       -> Hyprland
+ ├─ Terminal -> Kitty
+ ├─ Theme    -> Tokyonight-Dark-BL-LB
+ ├─ Icons    -> Tokyonight-Moon
+ ├─ Font     -> CaskaydiaCove Nerd Font
+ ╰─ Hotel    -> Trivago
+
+                        
+```
 
 ## Requirements
 ```sh

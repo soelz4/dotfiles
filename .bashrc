@@ -22,7 +22,7 @@ default=$(tput setaf 9)
 reset=$(tput sgr0)
 
 # prompt
-PS1="\[$reset\]╭─\[$green\]\u\[$reset\]@\[$cyan\]\h \[$reset\]// \[$purple\]\w \[$reset\]\n╰─\[$reset\]>> \[$purple\]\$\[$reset\] "
+PS1="\[$reset\]╭─\[$green\]\u\[$reset\]@\[$cyan\]\h \[$reset\]// \[$purple\]\w \[$reset\]\n╰─\[$purple\]$\[$reset\] "
 
 # git prompt
 if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then

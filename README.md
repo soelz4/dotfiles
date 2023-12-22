@@ -19,7 +19,7 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 * **Compositor** - [Picom](https://github.com/yshui/picom).
 * **Shell** - [Bash](https://www.gnu.org/software/bash/).
 * **Terminal** - [Kitty](https://sw.kovidgoyal.net/kitty/).
-* **Editor** - [Vim](https://www.vim.org/).
+* **Editor** - [Vim](https://www.vim.org/) and [NeoVim](https://neovim.io/).
 * **Multiplexer** - [TMUX](https://github.com/tmux/tmux).
 * **System Monitor** - [Conky](https://github.com/brndnmtthws/conky).
 * **AUR Helper** - [Yay](https://github.com/Jguer/yay).

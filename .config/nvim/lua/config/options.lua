@@ -44,4 +44,3 @@ vim.opt.formatoptions:append({ "r" })
 
 vim.cmd([[au BufNewFile,BufRead *.astro setf astro]])
 vim.cmd([[au BufNewFile,BufRead Podfile setf ruby]])
-

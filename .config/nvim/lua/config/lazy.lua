@@ -78,4 +78,4 @@ local ui = {
 
 local debug = false
 
-require("lazy").setup(spec,defaults,dev,checker,performance,ui,debug)
+require("lazy").setup(spec, defaults, dev, checker, performance, ui, debug)

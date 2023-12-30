@@ -1,33 +1,48 @@
 return {
 	{
-		-- https://github.com/hrsh7th/nvim-cmp
-		"hrsh7th/nvim-cmp",
-		event = 'InsertEnter',
+		-- Adds LSP completion capabilities
+		"hrsh7th/cmp-nvim-lsp",
+		lazy = false,
+		config = true,
+	},
+	{
+		-- Snippet Engine & its associated nvim-cmp source
+		"L3MON4D3/LuaSnip",
+		lazy = false,
 		dependencies = {
-			-- Snippet Engine & its associated nvim-cmp source
-			'L3MON4D3/LuaSnip',
-			'saadparwaiz1/cmp_luasnip',
-
-			-- Adds LSP completion capabilities
-			'hrsh7th/cmp-nvim-lsp',
-			'hrsh7th/cmp-path',
-
+			-- For luasnip users
+			"saadparwaiz1/cmp_luasnip",
 			-- Adds a number of user-friendly snippets
-			'rafamadriz/friendly-snippets',
-
-			'hrsh7th/cmp-buffer',
-			'hrsh7th/cmp-cmdline',
-			'hrsh7th/cmp-emoji'
+			"rafamadriz/friendly-snippets",
 		},
 		config = function()
-			local cmp = require('cmp')
-			local luasnip = require('luasnip')
+			require("luasnip.loaders.from_vscode").lazy_load()
+		end,
+	},
+	{
+		-- https://github.com/hrsh7th/nvim-cmp
+		"hrsh7th/nvim-cmp",
+		lazy = false,
+		event = "InsertEnter",
+		dependencies = {
+			"hrsh7th/cmp-path",
+			"hrsh7th/cmp-buffer",
+			"hrsh7th/cmp-cmdline",
+			"hrsh7th/cmp-emoji",
+		},
+		config = function()
+			local cmp = require("cmp")
+			local luasnip = require("luasnip")
 			vim.opt.completeopt = "menu,menuone,noselect"
 			cmp.setup({
 				snippet = {
 					expand = function(args)
 						luasnip.lsp_expand(args.body)
-					end
+					end,
+				},
+				window = {
+					completion = cmp.config.window.bordered(),
+					documentation = cmp.config.window.bordered(),
 				},
 				mapping = cmp.mapping.preset.insert({
 					["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
@@ -41,12 +56,12 @@ return {
 					["<CR>"] = cmp.mapping.confirm({ select = false }), -- confirm selection
 				}),
 				sources = cmp.config.sources({
-					{ name = "nvim_lsp" }, -- lsp 
+					{ name = "nvim_lsp" }, -- lsp
 					{ name = "luasnip" }, -- snippets
 					{ name = "buffer" }, -- text within current buffer
 					{ name = "path" }, -- file system paths
 				}),
 			})
-		end
-	}
+		end,
+	},
 }

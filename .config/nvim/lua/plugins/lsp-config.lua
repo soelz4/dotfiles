@@ -1,30 +1,62 @@
 return {
 	{
 		"williamboman/mason.nvim",
+		lazy = false,
 		config = function()
 			require("mason").setup()
-		end
+		end,
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
+		lazy = false,
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "rust_analyzer" }
+				ensure_installed = { "lua_ls", "rust_analyzer" },
 			})
-		end
+		end,
 	},
 	{
 		-- Additional lua configuration, makes nvim stuff amazing!
 		-- https://github.com/folke/neodev.nvim
-		{'folke/neodev.nvim' },
+		"folke/neodev.nvim",
 	},
 	{
 		"neovim/nvim-lspconfig",
+		lazy = false,
 		config = function()
 			-- Setup language servers.
-			local lspconfig = require('lspconfig')
-			lspconfig.lua_ls.setup({})
-			lspconfig.rust_analyzer.setup({})
-		end
-	}
+			-- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..
+			local capabilities = require("cmp_nvim_lsp").default_capabilities()
+			local lspconfig = require("lspconfig")
+			local on_attach = function(client)
+				require("completion").on_attach(client)
+			end
+			lspconfig.lua_ls.setup({
+				capabilities = capabilities,
+				on_attach = on_attach,
+			})
+			lspconfig.rust_analyzer.setup({
+				capabilities = capabilities,
+				on_attach = on_attach,
+				settings = {
+					["rust-analyzer"] = {
+						imports = {
+							granularity = {
+								group = "module",
+							},
+							prefix = "self",
+						},
+						cargo = {
+							buildScripts = {
+								enable = true,
+							},
+						},
+						procMacro = {
+							enable = true,
+						},
+					},
+				},
+			})
+		end,
+	},
 }

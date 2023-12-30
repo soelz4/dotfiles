@@ -4,10 +4,10 @@ return {
 	opts = {
 		options = {
 			-- globalstatus = false,
-			theme = 'molokai'
-		}
+			theme = "molokai",
+		},
 	},
 	config = function(_, opts)
-		require('lualine').setup(opts)
-	end
+		require("lualine").setup(opts)
+	end,
 }

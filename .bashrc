@@ -36,12 +36,6 @@ alias ls="exa --long --all --icons --header"
 # bat
 alias cat="bat"
 
-# kitty icat
-alias icat="kitten icat"
-
-# neofetch
-# alias neofetch="neofetch --kitty"
-
 # fzf
 alias fzf="fzf --preview 'bat --style=numbers --color=always {}' --bind 'enter:become(vim {})'"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash

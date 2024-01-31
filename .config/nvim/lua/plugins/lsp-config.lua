@@ -27,12 +27,18 @@ return {
 			-- Setup language servers.
 			-- The nvim-cmp almost supports LSP's capabilities so You should advertise it to LSP servers..
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
+			local util = require("lspconfig/util")
 			local lspconfig = require("lspconfig")
+			local on_attach = function(client)
+				require("completion").on_attach(client)
+			end
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
+				on_attach = on_attach,
 			})
 			lspconfig.rust_analyzer.setup({
 				capabilities = capabilities,
+				on_attach = on_attach,
 				settings = {
 					["rust-analyzer"] = {
 						imports = {
@@ -49,6 +55,22 @@ return {
 						procMacro = {
 							enable = true,
 						},
+					},
+				},
+			})
+			lspconfig.gopls.setup({
+				capabilities = capabilities,
+				on_attach = on_attach,
+				cmd = { "gopls" },
+				filetypes = { "go", "gomod", "gowork", "gotmpl" },
+				root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+				settings = {
+					gopls = {
+						analyses = {
+							unusedparams = true,
+						},
+						staticcheck = true,
+						gofumpt = true,
 					},
 				},
 			})

@@ -12,4 +12,6 @@ if status is-interactive
 	# Rust
 	set -U fish_user_paths $HOME/.cargo/env $fish_user_paths
 	set -U fish_user_paths $HOME/.cargo/bin $fish_user_paths
+	# GO
+	set -x -U fish_user_paths /usr/local/go/bin $fish_user_paths 
 end

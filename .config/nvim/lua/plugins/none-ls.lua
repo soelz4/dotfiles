@@ -13,6 +13,7 @@ return {
 					null_ls.builtins.formatting.goimports_reviser,
 					null_ls.builtins.formatting.golines,
 				},
+				ensure_installed = { "stylua", "spell", "gofumpt", "goimports_reviser", "golines" },
 			})
 		end,
 	},

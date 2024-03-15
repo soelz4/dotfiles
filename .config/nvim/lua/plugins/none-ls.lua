@@ -17,6 +17,7 @@ return {
 					null_ls.builtins.formatting.golines,
 					null_ls.builtins.diagnostics.yamllint,
 					null_ls.builtins.formatting.yamlfmt,
+					null_ls.builtins.formatting.shfmt,
 					null_ls.builtins.formatting.black,
 					null_ls.builtins.diagnostics.mypy,
 					null_ls.builtins.diagnostics.ruff,

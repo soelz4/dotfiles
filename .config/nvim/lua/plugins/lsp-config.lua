@@ -16,6 +16,7 @@ return {
 					"rust_analyzer",
 					"gopls",
 					"yamlls",
+					"bashls",
 					"pyright",
 					"docker_compose_language_service",
 					"dockerls",
@@ -26,6 +27,7 @@ return {
 					"golines",
 					"yamlfmt",
 					"yamllint",
+					"shfmt",
 					"mypy",
 					"ruff",
 					"black",
@@ -104,6 +106,11 @@ return {
 			})
 			-- YAML
 			lspconfig.yamlls.setup({
+				capabilities = capabilities,
+				-- on_attach = on_attach,
+			})
+			-- Shell
+			lspconfig.bashls.setup({
 				capabilities = capabilities,
 				-- on_attach = on_attach,
 			})

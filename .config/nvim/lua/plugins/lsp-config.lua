@@ -3,16 +3,41 @@ return {
 		"williamboman/mason.nvim",
 		lazy = false,
 		config = function()
-			require("mason").setup()
+			require("mason").setup({})
+		end,
+	},
+	{
+		"WhoIsSethDaniel/mason-tool-installer.nvim",
+		config = function()
+			require("mason-tool-installer").setup({
+				ensure_installed = {
+					-- LSP
+					"lua_ls",
+					"rust_analyzer",
+					"gopls",
+					"yamlls",
+					"pyright",
+					"docker_compose_language_service",
+					"dockerls",
+					-- Diagnostics, Code Actions, Linter, and more via Lua
+					"stylua",
+					"gofumpt",
+					"goimports-reviser",
+					"golines",
+					"yamlfmt",
+					"yamllint",
+					"mypy",
+					"ruff",
+					"black",
+				},
+			})
 		end,
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
 		lazy = false,
 		config = function()
-			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "rust_analyzer" },
-			})
+			require("mason-lspconfig").setup({})
 		end,
 	},
 	{
@@ -32,13 +57,15 @@ return {
 			local on_attach = function(client)
 				require("completion").on_attach(client)
 			end
+			-- Lua (lua_ls)
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
-				on_attach = on_attach,
+				-- on_attach = on_attach,
 			})
+			-- Rust (rust_analyzer)
 			lspconfig.rust_analyzer.setup({
 				capabilities = capabilities,
-				on_attach = on_attach,
+				-- on_attach = on_attach,
 				settings = {
 					["rust-analyzer"] = {
 						imports = {
@@ -58,9 +85,10 @@ return {
 					},
 				},
 			})
+			-- Go (gopls)
 			lspconfig.gopls.setup({
 				capabilities = capabilities,
-				on_attach = on_attach,
+				-- on_attach = on_attach,
 				cmd = { "gopls" },
 				filetypes = { "go", "gomod", "gowork", "gotmpl" },
 				root_dir = util.root_pattern("go.work", "go.mod", ".git"),
@@ -73,6 +101,26 @@ return {
 						gofumpt = true,
 					},
 				},
+			})
+			-- YAML
+			lspconfig.yamlls.setup({
+				capabilities = capabilities,
+				-- on_attach = on_attach,
+			})
+			-- Python (pyright)
+			lspconfig.pyright.setup({
+				capabilities = capabilities,
+				-- on_attach = on_attach,
+				filetypes = { "python" },
+			})
+			-- Docker and Docker-Compose
+			lspconfig.docker_compose_language_service.setup({
+				capabilities = capabilities,
+				-- on_attach = on_attach,
+			})
+			lspconfig.dockerls.setup({
+				capabilities = capabilities,
+				-- on_attach = on_attach,
 			})
 		end,
 	},

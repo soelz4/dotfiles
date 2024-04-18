@@ -37,7 +37,7 @@ for this Please Check [Artix Linux Wiki](https://wiki.artixlinux.org/Main/Reposi
 If you are Using a non-Systemd Init System, You Must do Somethings in Your Own Way.\
 if You are Using Systemd Init System, You Must Check the [Packages List](https://github.com/soelz4/dotfiles/blob/main/pacman_pkglist.txt) and Serach for Packages that Includes Word Runit (like git-runit), then Delete the Word -runit.\
 Also, You can Look at the Package List File and Add any Package You Like or Remove a Package from the List of Packages.\
-Also, There are some Additional Steps in the Installation Version that are Mentioned in the File, so Check it Before Running the File.\
+Also, There are some Additional Steps in the Installation Version that are Mentioned in the File, so Check it Before Running the File.
 
 ```sh
 git clone https://github.com/soelz4/dotfiles.git

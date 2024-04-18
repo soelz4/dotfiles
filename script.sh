@@ -66,7 +66,8 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle &&
 	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 # Copy Wallpapers Directory to Home Directory
-cp -r ./wallpapers/ "$HOME"
+mkdir ~/wallpapers/
+cp -r ./wallpapers/* "$HOME"/wallpapers/
 
 # Copy Some Configs into Home Directory
 cp .vimrc \
@@ -77,5 +78,137 @@ cp .vimrc \
 	.Xresources \
 	"$HOME"
 
-# Copy Dotfiles into .config Directory
-cp -r .config/* ~/.config/
+# Make Directory .config
+mkdir -p ~/.config/
+
+# Rofi
+if [ -d ~/.config/rofi/ ]; then
+	echo "Rofi Configs Detected, Backing Up and Then Installing ..."
+	mkdir ~/.config/rofi.backup/ && mv ~/.config/rofi/* ~/.config/rofi.backup/
+	cp -r ./.config/rofi/* ~/.config/rofi/
+else
+	echo "Installing Rofi Configs..."
+	mkdir ~/.config/rofi/ && cp -r ./.config/rofi/* ~/.config/rofi
+fi
+
+sleep 2
+
+# Picom
+if [ -f ~/.config/picom/picom.conf ]; then
+	echo "Picom Configs Detected, Backing Up and Then Installing ..."
+	cp ~/.config/picom/picom.conf ~/.config/picom/picom.conf.backup
+	cp ./.config/picom/picom.conf ~/.config/picom/picom.conf
+else
+	echo "Installing Picom Configs..."
+	mkdir ~/.config/picom/ && cp ./.config/picom/picom.conf ~/.config/picom/picom.conf
+fi
+
+sleep 2
+
+# WezTerm
+if [ -f ~/.config/wezterm/wezterm.lua ]; then
+	echo "WezTerm Configs Detected, Backing Up and Then Installing ..."
+	cp ~/.config/wezterm/wezterm.lua ~/.config/wezterm/wezterm.lua.backup
+	cp ./.config/wezterm/wezterm.lua ~/.config/wezterm/wezterm.lua
+else
+	echo "Installing WezTerm Configs..."
+	mkdir ~/.config/wezterm/ && cp ./.config/wezterm/wezterm.lua ~/.config/wezterm/wezterm.lua
+fi
+
+sleep 2
+
+# PolyBar
+if [ -d ~/.config/polybar/ ]; then
+	echo "PolyBar Configs Detected, Backing Up and Then Installing ..."
+	mkdir ~/.config/polybar.backup/ && mv ~/.config/polybar/* ~/.config/polybar.backup/
+	cp -r ./.config/polybar/* ~/.config/polybar/
+else
+	echo "Installing PolyBar Configs..."
+	mkdir ~/.config/polybar/ && cp -r ./.config/polybar/* ~/.config/polybar/
+fi
+
+sleep 2
+
+# TMUX
+if [ -d ~/.config/tmux/ ]; then
+	echo "TMUX Configs Detected, Backing Up and Then Installing ..."
+	mkdir ~/.config/tmux.backup/ && mv ~/.config/tmux/* ~/.config/tmux.backup/
+	cp -r ./.config/tmux/* ~/.config/tmux/
+else
+	echo "Installing TMUX Configs..."
+	mkdir ~/.config/tmux/ && cp -r ./.config/tmux/* ~/.config/tmux/
+fi
+
+sleep 2
+
+# BSPWM
+if [ -d ~/.config/bspwm/ ]; then
+	echo "BSPWM Configs Detected, Backing Up and Then Installing ..."
+	mkdir ~/.config/bspwm.backup/ && mv ~/.config/bspwm/* ~/.config/bspwm.backup/
+	cp -r ./.config/bspwm/* ~/.config/bspwm/
+else
+	echo "Installing BSPWM Configs..."
+	mkdir ~/.config/bspwm/ && cp -r ./.config/bspwm/* ~/.config/bspwm/
+fi
+
+sleep 2
+
+# SXHKD
+if [ -d ~/.config/sxhkd/ ]; then
+	echo "SXHKD Configs Detected, Backing Up and Then Installing ..."
+	mkdir ~/.config/sxhkd.backup/ && mv ~/.config/sxhkd/* ~/.config/sxhkd.backup/
+	cp -r ./.config/sxhkd/* ~/.config/sxhkd/
+else
+	echo "Installing SXHKD Configs..."
+	mkdir ~/.config/sxhkd/ && cp -r ./.config/sxhkd/* ~/.config/sxhkd/
+fi
+
+sleep 2
+
+# Fish
+if [ -d ~/.config/fish/ ]; then
+	echo "Fish Configs Detected, Backing Up and Then Installing ..."
+	mkdir ~/.config/fish.backup/ && mv ~/.config/fish/* ~/.config/fish.backup/
+	cp -r ./.config/fish/* ~/.config/fish/
+else
+	echo "Installing Fish Configs..."
+	mkdir ~/.config/fish/ && cp -r ./.config/fish/* ~/.config/fish/
+fi
+
+sleep 2
+
+# Conky
+if [ -d ~/.config/conky/ ]; then
+	echo "Conky Configs Detected, Backing Up and Then Installing ..."
+	mkdir ~/.config/conky.backup/ && mv ~/.config/conky/* ~/.config/conky.backup/
+	cp -r ./.config/conky/* ~/.config/conky/
+else
+	echo "Installing Conky Configs..."
+	mkdir ~/.config/conky/ && cp -r ./.config/conky/* ~/.config/conky/
+fi
+
+sleep 2
+
+# jgmenu
+if [ -d ~/.config/jgmenu/ ]; then
+	echo "jgmenu Configs Detected, Backing Up and Then Installing ..."
+	mkdir ~/.config/jgmenu.backup/ && mv ~/.config/jgmenu/* ~/.config/jgmenu.backup/
+	cp -r ./.config/jgmenu/* ~/.config/jgmenu/
+else
+	echo "Installing jgmenu Configs..."
+	mkdir ~/.config/jgmenu/ && cp -r ./.config/jgmenu/* ~/.config/jgmenu/
+fi
+
+sleep 2
+
+# NeoVim
+if [ -d ~/.config/nvim/ ]; then
+	echo "NeoVim Configs Detected, Backing Up and Then Installing ..."
+	mkdir ~/.config/nvim.backup/ && mv ~/.config/nvim/* ~/.config/nvim.backup/
+	cp -r ./.config/nvim/* ~/.config/nvim/
+else
+	echo "Installing NeoVim Configs..."
+	mkdir ~/.config/nvim/ && cp -r ./.config/nvim/* ~/.config/nvim/
+fi
+
+sleep 2

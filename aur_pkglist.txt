@@ -1,2 +1,3 @@
-eww-x11
+light
+otf-openmoji
 xqp

@@ -20,6 +20,7 @@ return {
 					"pyright",
 					"nginx-language-server",
 					"htmx",
+					"denols",
 					"html",
 					"cssls",
 					"docker_compose_language_service",
@@ -116,6 +117,7 @@ return {
 				-- on_attach = on_attach,
 			})
 			-- Shell
+			-- Please Install shellcheck Package for Linting
 			lspconfig.bashls.setup({
 				capabilities = capabilities,
 				-- on_attach = on_attach,
@@ -161,6 +163,13 @@ return {
 			})
 			-- CSS
 			lspconfig.cssls.setup({
+				capabilities = capabilities,
+				-- on_attach = on_attach,
+			})
+			-- Deno
+			-- Please Install Deno - curl -fsSL https://deno.land/install.sh | sh
+			-- Use deno init for Each Project (LSP, Linting, Formatting)
+			lspconfig.denols.setup({
 				capabilities = capabilities,
 				-- on_attach = on_attach,
 			})

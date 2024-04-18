@@ -33,11 +33,11 @@ for this Please Check [Artix Linux Wiki](https://wiki.artixlinux.org/Main/Reposi
 
 ## Script
 
-⚠️ **NOTE!!!!!** Important Points About Packages List and System Init. Since I am Using an Artix Linux with Runit System Init, You may not Need to do Some Steps.\
-If you are Using a non-Systemd Init System, You Must do Somethings in Your Own Way.\
-if You are Using Systemd Init System, You Must Check the [Packages List](https://github.com/soelz4/dotfiles/blob/main/pacman_pkglist.txt) and Serach for Packages that Includes Word "-runit" (like git-runit), then Delete the Word -runit.\
-Also, You can Look at the Package List File and Add any Package You Like or Remove a Package from the List of Packages.\
-Also, There are some Additional Steps in the Installation Version that are Mentioned in the File, so Check it Before Running the File.
+⚠️ **NOTE!!!!!** Important Points About Packages List and System Init. Since I am Using an Artix Linux with Runit System Init, You may not Need to do Some Steps.
+If you are Using a non-Systemd Init System, You Must do Somethings in Your Own Way.
+if You are Using Systemd Init System, You Must Check the [Packages List](https://github.com/soelz4/dotfiles/blob/main/pacman_pkglist.txt) and Serach for Packages that Includes Word "-runit" (like git-runit), then Delete the Word -runit.
+Also, You can Look at the Package List File and Add any Package You Like or Remove a Package from the List of Packages.
+Also, There are some Additional Steps in the Installation Script that are Mentioned in the [Script File](https://github.com/soelz4/dotfiles/blob/main/script.sh), so Check it Before Running the Script File and You Can Skip those Steps.
 
 ```sh
 git clone https://github.com/soelz4/dotfiles.git

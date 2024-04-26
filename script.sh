@@ -19,18 +19,23 @@ sudo pacman --noconfirm -Syyu artix-keyring archlinux-keyring
 # AUR Helper - Default Value = yay
 HELPER="yay"
 
+echo "______________________"
 # Install Packages from Official Repository
 echo "Install Packages from Official Repository ..." && sleep 2
 sudo pacman -S $(awk '{print $1}' pacman_pkglist.txt)
 
+echo "______________________"
 # im Using Artix Runit Sysytem Init so i Need to RUN this Command
 # if You Use Other System init you Must link it in Your Own Way
 # and if you use Systemd Skip this Step and Comment it
+echo "Link the Service Directories into the Desired RUN Level Directory"
 sudo ln -s /etc/runit/sv/git-daemon/ /run/runit/service/
 sudo ln -s /etc/runit/sv/alsa/ /run/runit/service/
 
+echo "______________________"
 # Initialize AUR Helper
-echo "We Need an AUR Helper. It is Essential.  1) paru  2) yay"
+echo "AUR HELPER"
+echo "We Need an AUR Helper. It is Essential.  1) yay  2) paru"
 read -r -p "What is the AUR Helper of your Choice? (Default is yay): " num
 if [ "$num" -eq 2 ]; then
 	HELPER="paru"
@@ -43,33 +48,48 @@ if ! command -v $HELPER &>/dev/null; then
 	(cd ~/Downloads/$HELPER/ && makepkg -si)
 fi
 
+echo "______________________"
 # Install Packages from AUR Repository
 echo "Install Packages from AUR Repository ..." && sleep 2
 "$HELPER" -S $(awk '{print $1}' aur_pkglist.txt)
 
+echo "______________________"
 # Install fzf
+echo "Installing FuzzyFinder"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
+echo "______________________"
 # Install tmuxifier
+echo "Installing Tmuxifier"
 git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
 
+echo "______________________"
 # install TMUX TPM
+echo "Installing TMUX TPM"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+echo "______________________"
 # Install Vim Plug
+echo "Installing Vim Plug"
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+echo "______________________"
 # Install Pathogen
+echo "Installing Pathogen"
 mkdir -p ~/.vim/autoload ~/.vim/bundle &&
 	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
+echo "______________________"
 # Copy Wallpapers Directory to Home Directory
+echo "Copy Wallpapers into Your ~/wallpapers/ Directory"
 mkdir ~/wallpapers/
 cp -r ./wallpapers/* "$HOME"/wallpapers/
 
+echo "______________________"
 # Copy Some Configs into Home Directory
+echo "Copy Some Configs into Home Directory"
 cp .vimrc \
 	.tmux.conf \
 	.fzf.bash \
@@ -78,9 +98,12 @@ cp .vimrc \
 	.Xresources \
 	"$HOME"
 
+echo "______________________"
 # Make Directory .config
+echo "Create ~/.config/ Directory"
 mkdir -p ~/.config/
 
+echo "______________________"
 # Rofi
 if [ -d ~/.config/rofi/ ]; then
 	echo "Rofi Configs Detected, Backing Up and Then Installing ..."

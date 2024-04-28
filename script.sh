@@ -104,7 +104,6 @@ echo "${red}______________________${reset}"
 echo "${green}Copy Some Configs into Home Directory${reset}"
 cp .vimrc \
 	.tmux.conf \
-	.fzf.bash \
 	.bashrc \
 	.xinitrc \
 	.Xresources \
@@ -201,13 +200,17 @@ fi
 sleep 2
 
 # Fish
-if [ -d ~/.config/fish/ ]; then
+if [ -f ~/.config/fish/config.fish ]; then
 	echo "${green}Fish Configs Detected, Backing Up and Then Installing ...${reset}"
-	mkdir ~/.config/fish.backup/ && mv ~/.config/fish/* ~/.config/fish.backup/
-	cp -r ./.config/fish/* ~/.config/fish/
+	mv ~/.config/fish/config.fish ~/.config/fish/config.fish.backup
+	cp ./.config/fish/config.fish ~/.config/fish/
 else
 	echo "${green}Installing Fish Configs...${reset}"
-	mkdir ~/.config/fish/ && cp -r ./.config/fish/* ~/.config/fish/
+	if [ -d ~/.config/fish/ ]; then
+		cp ./.config/fish/config.fish ~/.config/fish/
+	else
+		mkdir ~/.config/fish && cp ./.config/fish/config.fish ~/.config/fish/
+	fi
 fi
 
 sleep 2

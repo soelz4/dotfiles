@@ -7,6 +7,8 @@ bash-completion
 bat
 bspwm
 conky
+docker-runit
+docker-compose
 dunst
 exa
 feh
@@ -24,6 +26,7 @@ noto-fonts-emoji
 picom
 papirus-icon-theme
 polybar
+postgres-runit
 pulseaudio
 pulseaudio-alsa
 ranger

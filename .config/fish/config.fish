@@ -18,6 +18,6 @@ if status is-interactive
 	set -gx PATH $HOME/.tmuxifier/bin $PATH
 	eval (tmuxifier init - fish)
 	# Deno
-	set -x DENO_INSTALL /home/soheil/.deno
+	set -x DENO_INSTALL ~/.deno
 	set -x PATH $DENO_INSTALL/bin $PATH
 end

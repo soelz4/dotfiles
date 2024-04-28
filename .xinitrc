@@ -50,6 +50,6 @@ fi
 
 setxkbmap -layout us,ir -option grp:alt_shift_toggle &
 picom &
-feh --bg-fill /home/soelz4/wallpapers/Kossak_Battle_of_Olszynka_Grochowska.jpg
+feh --bg-fill ~/wallpapers/Kossak_Battle_of_Olszynka_Grochowska.jpg
 xsetroot -cursor_name left_ptr
 exec bspwm

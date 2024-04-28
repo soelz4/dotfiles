@@ -22,7 +22,7 @@ default=$(tput setaf 9)
 reset=$(tput sgr0)
 
 # prompt
-PS1="\[$reset\]╭─\[$green\]\u\[$reset\]@\[$cyan\]\h \[$reset\]// \[$purple\]\w \[$reset\]\n╰─\[$purple\]$\[$reset\] "
+# PS1="\[$reset\]╭─\[$green\]\u\[$reset\]@\[$cyan\]\h \[$reset\]// \[$purple\]\w \[$reset\]\n╰─\[$purple\]$\[$reset\] "
 
 # git prompt
 if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
@@ -41,4 +41,4 @@ alias fzf="fzf --preview 'bat --style=numbers --color=always {}' --bind 'enter:b
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # fish shell
-# exec fish
+exec fish

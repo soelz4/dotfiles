@@ -26,10 +26,11 @@ noto-fonts-emoji
 picom
 papirus-icon-theme
 polybar
-postgres-runit
+postgresql-runit
 pulseaudio
 pulseaudio-alsa
 ranger
+redis-runit
 rhythmbox
 rofi
 scrot

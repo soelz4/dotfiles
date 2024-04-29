@@ -18,7 +18,6 @@ return {
 					"yamlls",
 					"bashls",
 					"pyright",
-					"nginx-language-server",
 					"htmx",
 					"denols",
 					"html",
@@ -143,11 +142,6 @@ return {
 				-- on_attach = on_attach,
 			})
 			lspconfig.dockerls.setup({
-				capabilities = capabilities,
-				-- on_attach = on_attach,
-			})
-			-- NGINX Configurations
-			lspconfig.nginx_language_server.setup({
 				capabilities = capabilities,
 				-- on_attach = on_attach,
 			})

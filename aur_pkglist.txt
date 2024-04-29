@@ -1,3 +1,5 @@
 light
 otf-openmoji
 xqp
+visual-studio-code-bin
+slack-desktop

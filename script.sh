@@ -45,7 +45,8 @@ sudo ln -s /etc/runit/sv/git-daemon/ /run/runit/service/
 sudo mkdir -p /srv/git
 sudo ln -s /etc/runit/sv/alsa/ /run/runit/service/
 sudo ln -s /etc/runit/sv/docker/ /run/runit/service/
-sudo ln -s /etc/runit/sv/postgres/ /run/runit/service/
+sudo ln -s /etc/runit/sv/postgresql/ /run/runit/service/
+sudo ln -s /etc/runit/sv/redis/ /run/runit/service/
 
 echo "${red}______________________${reset}"
 # Initialize AUR Helper

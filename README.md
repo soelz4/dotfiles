@@ -22,6 +22,7 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 - **Editor** - [Vim](https://www.vim.org/) and [NeoVim](https://neovim.io/).
 - **Multiplexer** - [TMUX](https://github.com/tmux/tmux).
 - **System Monitor** - [Conky](https://github.com/brndnmtthws/conky).
+- **Notification** - [Dunst](https://github.com/dunst-project/dunst).
 - **AUR Helper** - [Yay](https://github.com/Jguer/yay).
 
 ## Requirements
@@ -35,7 +36,7 @@ for this Please Check [Artix Linux Wiki](https://wiki.artixlinux.org/Main/Reposi
 
 ⚠️ **NOTE!!!!!** Important Points About Packages List and System Init. Since I am Using an Artix Linux with Runit System Init, You may not Need to do Some Steps.
 If you are Using a non-Systemd Init System, You Must do Somethings in Your Own Way.
-if You are Using Systemd Init System, You Must Check the [Packages List](https://github.com/soelz4/dotfiles/blob/main/pacman_pkglist.txt) and Serach for Packages that Includes Word "-runit" (like git-runit), then Delete the Word -runit.
+if You are Using Systemd Init System, You Must Check the [Packages List](https://github.com/soelz4/dotfiles/blob/main/pacman_pkglist.txt) and Serach for Packages that Includes Word "-runit" (like git-runit), then Delete the Word "-runit".
 Also, You can Look at the Package List File and Add any Package You Like or Remove a Package from the List of Packages.
 Also, There are some Additional Steps in the Installation Script that are Mentioned in the [Script File](https://github.com/soelz4/dotfiles/blob/main/script.sh), so Check it Before Running the Script File and You Can Skip those Steps.
 

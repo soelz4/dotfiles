@@ -3,7 +3,7 @@
 # AutoStart
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom --experimental-backend &
-sleep 3 && conky -c "$HOME"/.config/conky/doom-one-01.conkyrc
+# sleep 3 && conky -c "$HOME"/.config/conky/doom-one-01.conkyrc
 
 # Bar
 $HOME/.config/polybar/launch.sh
@@ -39,3 +39,7 @@ bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+
+# dunst
+killall dunst
+../dunst/bspdunst.sh

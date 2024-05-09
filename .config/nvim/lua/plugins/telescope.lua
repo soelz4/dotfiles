@@ -17,8 +17,11 @@ return {
 			local builtin = require("telescope.builtin")
 			-- Telescope Keymaps
 			vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
+			vim.keymap.set("n", "<space>fb", function()
+				require("telescope").extensions.file_browser.file_browser()
+			end)
 			vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
-			vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
+			vim.keymap.set("n", "<leader>fr", builtin.buffers, {})
 			vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
 		end,
 	},
@@ -27,7 +30,16 @@ return {
 		-- This is your opts table
 		config = function()
 			require("telescope").setup({
+				pickers = {
+					find_files = {
+						hidden = true,
+						-- theme = "dropdown",
+					},
+				},
 				extensions = {
+					file_browser = {
+						theme = "ivy",
+					},
 					["ui-select"] = {
 						require("telescope.themes").get_dropdown({
 							-- even more opts
@@ -37,6 +49,7 @@ return {
 			})
 			-- To get ui-select loaded and working with telescope, you need to call
 			-- load_extension, somewhere after setup function:
+			require("telescope").load_extension("file_browser")
 			require("telescope").load_extension("ui-select")
 		end,
 	},

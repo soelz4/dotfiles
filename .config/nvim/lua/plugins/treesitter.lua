@@ -14,6 +14,8 @@ return {
 				"http",
 				"java",
 				"python",
+				"lua",
+				"go",
 				"rust",
 				"sql",
 			},

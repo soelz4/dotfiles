@@ -15,6 +15,7 @@ return {
 					"lua_ls",
 					"rust_analyzer",
 					"gopls",
+					"clangd",
 					"yamlls",
 					"bashls",
 					"pyright",
@@ -109,6 +110,10 @@ return {
 						gofumpt = true,
 					},
 				},
+			})
+			lspconfig.clangd.setup({
+				capabilities = capabilities,
+				-- on_attach = on_attach,
 			})
 			-- YAML
 			lspconfig.yamlls.setup({

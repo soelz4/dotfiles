@@ -56,7 +56,7 @@ return {
 					["<C-b>"] = cmp.mapping.scroll_docs(-4), -- scroll backward
 					["<C-f>"] = cmp.mapping.scroll_docs(4), -- scroll forward
 					["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
-					["<C-e>"] = cmp.mapping.abort(),     -- clear completion window
+					["<C-e>"] = cmp.mapping.abort(), -- clear completion window
 					["<CR>"] = cmp.mapping.confirm({ select = false }), -- confirm selection
 				}),
 				sources = cmp.config.sources({
@@ -102,6 +102,13 @@ return {
 							return vim_item
 						end,
 					}),
+				},
+			})
+			-- Setup up vim-dadbod
+			cmp.setup.filetype({ "sql" }, {
+				sources = {
+					{ name = "vim-dadbod-completion" },
+					{ name = "buffer" },
 				},
 			})
 		end,

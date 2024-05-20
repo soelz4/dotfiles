@@ -6,6 +6,7 @@ base-devel
 bash-completion
 bat
 bspwm
+clang
 conky
 docker-runit
 docker-compose
@@ -20,9 +21,12 @@ gvim
 htop
 imagemagick
 jgmenu
+lazygit
 neofetch
 neovim
+nodejs
 noto-fonts-emoji
+npm
 picom
 papirus-icon-theme
 polybar
@@ -34,6 +38,7 @@ redis-runit
 rhythmbox
 rofi
 scrot
+shellcheck
 sxhkd
 tmux
 w3m

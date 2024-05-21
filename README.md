@@ -15,7 +15,7 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 
 ## Info
 
-<img src="screenshots/scrot-0.png" alt="Linux Fetch" align="right" width="550px">
+<img src="screenshots/scrot-3.png" alt="Linux Fetch" align="right" width="580px">
 
 - **Distro** - **[Artix Linux](https://artixlinux.org/)**.
 - **System Init** - [runit](http://smarden.org/runit/).

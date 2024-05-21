@@ -1,15 +1,22 @@
 # dotfiles
 
+<img src="screenshots/scrot-2.png" width="850px">
+
 Customization Files for Linux or Other Unix-Based System. This Repository Contains My Personal Dotfiles.
 
 ![Linux Badge](https://img.shields.io/badge/Linux-0d1117?style=for-the-badge&logo=linux&logoColor=white)
 ![Shell script](https://img.shields.io/badge/Shell_Script-0d1117?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
-⚠️ **NOTE!!!!!** This configuration was made for my Laptop, so some things might not work on your PC or Laptop as this was never intended to be a usable full fledged system, in that case, please try if you can fix that up as much as possible, or you can open an issue for help :) - This was made for a **1920x1080** screen and on a **Laptop** with **96** dpi.
+<br>
+
+> [!CAUTION]
+> ⚠️ **NOTE!!!!!** This configuration was made for my Laptop, so some things might not work on your PC or Laptop as this was never intended to be a usable full fledged system, in that case, please try if you can fix that up as much as possible, or you can open an issue for help :) - This was made for a **1920x1080** screen and on a **Laptop** with **96** dpi.
+
+<br>
 
 ## Info
 
-<img src="screenshots/scrot-0.png" alt="Linux Fetch" align="right" width="550px">
+<img src="screenshots/scrot-3.png" alt="Linux Fetch" align="right" width="580px">
 
 - **Distro** - **[Artix Linux](https://artixlinux.org/)**.
 - **System Init** - [runit](http://smarden.org/runit/).

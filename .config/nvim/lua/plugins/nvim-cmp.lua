@@ -65,6 +65,7 @@ return {
 					{ name = "buffer" }, -- text within current buffer
 					{ name = "path" }, -- file system paths
 				}),
+				--[[
 				formatting = {
 					format = lspkind.cmp_format({
 						mode = "symbol_text", -- show only symbol annotations
@@ -103,6 +104,7 @@ return {
 						end,
 					}),
 				},
+				--]]
 			})
 			-- Setup up vim-dadbod
 			cmp.setup.filetype({ "sql" }, {

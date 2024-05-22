@@ -70,34 +70,6 @@ echo "${green}Install Packages from AUR Repository ...${reset}" && sleep 2
 "$HELPER" -S $(awk '{print $1}' aur_pkglist.txt)
 
 echo "${red}______________________${reset}"
-# Install fzf
-echo "${green}Installing FuzzyFinder${reset}"
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
-
-echo "${red}______________________${reset}"
-# Install tmuxifier
-echo "${green}Installing Tmuxifier${reset}"
-git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
-
-echo "${red}______________________${reset}"
-# install TMUX TPM
-echo "${green}Installing TMUX TPM${reset}"
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-echo "${red}______________________${reset}"
-# Install Vim Plug
-echo "${green}Installing Vim Plug${reset}"
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-echo "${red}______________________${reset}"
-# Install Pathogen
-echo "${green}Installing Pathogen${reset}"
-mkdir -p ~/.vim/autoload ~/.vim/bundle &&
-	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-
-echo "${red}______________________${reset}"
 # Copy Wallpapers Directory to Home Directory
 echo "${green}Copy Wallpapers into Your ~/wallpapers/ Directory${reset}"
 mkdir ~/wallpapers/
@@ -254,3 +226,41 @@ else
 fi
 
 sleep 2
+
+echo "${red}______________________${reset}"
+# Install fzf
+echo "${green}Installing FuzzyFinder${reset}"
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
+echo "${red}______________________${reset}"
+# Install tmuxifier
+echo "${green}Installing Tmuxifier${reset}"
+git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
+
+echo "${red}______________________${reset}"
+# install TMUX TPM
+echo "${green}Installing TMUX TPM${reset}"
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+echo "${red}______________________${reset}"
+# Install Vim Plug
+echo "${green}Installing Vim Plug${reset}"
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+	https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+echo "${red}______________________${reset}"
+# Install Pathogen
+echo "${green}Installing Pathogen${reset}"
+mkdir -p ~/.vim/autoload ~/.vim/bundle &&
+	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+echo "${red}______________________${reset}"
+# Install Deno
+echo "${green}Installing Deno${reset}"
+curl -fsSL https://deno.land/install.sh | sh
+
+echo "${red}______________________${reset}"
+# Install Rust
+echo "${green}Installing Rust${reset}"
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh

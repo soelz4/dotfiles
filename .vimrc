@@ -42,6 +42,12 @@ Plug 'tpope/vim-vinegar'
 Plug 'christoomey/vim-tmux-navigator'
 " vim-test
 Plug 'vim-test/vim-test'
+" vim-sneak
+Plug 'justinmk/vim-sneak'
+" vim-surround
+Plug 'tpope/vim-surround'
+" vim-repeat
+Plug 'tpope/vim-repeat'
 
 call plug#end()
 

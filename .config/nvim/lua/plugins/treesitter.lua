@@ -7,6 +7,7 @@ return {
 			ensure_installed = {
 				"cmake",
 				"cpp",
+				"c",
 				"fish",
 				"bash",
 				"haskell",
@@ -15,9 +16,16 @@ return {
 				"java",
 				"python",
 				"lua",
+				"luadoc",
 				"go",
 				"rust",
 				"sql",
+				"markdown_inline",
+				"markdown",
+				"html",
+				"vim",
+				"vimdoc",
+				"diff",
 			},
 
 			-- matchup = {
@@ -29,6 +37,10 @@ return {
 				enable = true,
 				use_virtual_text = true,
 				lint_events = { "BufWrite", "CursorHold" },
+			},
+
+			highlight = {
+				enable = true,
 			},
 
 			playground = {

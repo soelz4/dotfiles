@@ -24,6 +24,13 @@ return {
 			vim.keymap.set("n", "<leader>fr", builtin.buffers, {})
 			vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
 			vim.keymap.set("n", "<leader>km", builtin.keymaps, {})
+
+			vim.keymap.set("n", "<leader>gd", builtin.lsp_definitions, {})
+			vim.keymap.set("n", "<leader>gr", builtin.lsp_references, {})
+			vim.keymap.set("n", "<leader>gI", builtin.lsp_implementations, {})
+			vim.keymap.set("n", "<leader>D", builtin.lsp_type_definitions, {})
+			vim.keymap.set("n", "<leader>ds", builtin.lsp_document_symbols, {})
+			vim.keymap.set("n", "<leader>ws", builtin.lsp_dynamic_workspace_symbols, {})
 		end,
 	},
 	{

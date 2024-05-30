@@ -64,17 +64,23 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			local util = require("lspconfig/util")
 			local lspconfig = require("lspconfig")
+			local handlers = {
+				["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" }),
+				["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" }),
+			}
 			local on_attach = function(client)
 				require("completion").on_attach(client)
 			end
 			-- Lua (lua_ls)
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
+				handlers = handlers,
 				-- on_attach = on_attach,
 			})
 			-- Rust (rust_analyzer)
 			lspconfig.rust_analyzer.setup({
 				capabilities = capabilities,
+				handlers = handlers,
 				-- on_attach = on_attach,
 				settings = {
 					["rust-analyzer"] = {
@@ -98,6 +104,7 @@ return {
 			-- Go (gopls)
 			lspconfig.gopls.setup({
 				capabilities = capabilities,
+				handlers = handlers,
 				-- on_attach = on_attach,
 				cmd = { "gopls" },
 				filetypes = { "go", "gomod", "gowork", "gotmpl" },
@@ -112,19 +119,23 @@ return {
 					},
 				},
 			})
+			-- Clang
 			lspconfig.clangd.setup({
 				capabilities = capabilities,
+				handlers = handlers,
 				-- on_attach = on_attach,
 			})
 			-- YAML
 			lspconfig.yamlls.setup({
 				capabilities = capabilities,
+				handlers = handlers,
 				-- on_attach = on_attach,
 			})
 			-- Shell
 			-- Please Install shellcheck Package for Linting
 			lspconfig.bashls.setup({
 				capabilities = capabilities,
+				handlers = handlers,
 				-- on_attach = on_attach,
 				vim.api.nvim_create_autocmd("FileType", {
 					pattern = "sh",
@@ -139,31 +150,37 @@ return {
 			-- Python (pyright)
 			lspconfig.pyright.setup({
 				capabilities = capabilities,
+				handlers = handlers,
 				-- on_attach = on_attach,
 				filetypes = { "python" },
 			})
 			-- Docker and Docker-Compose
 			lspconfig.docker_compose_language_service.setup({
 				capabilities = capabilities,
+				handlers = handlers,
 				-- on_attach = on_attach,
 			})
 			lspconfig.dockerls.setup({
 				capabilities = capabilities,
+				handlers = handlers,
 				-- on_attach = on_attach,
 			})
 			-- HTMX
 			lspconfig.htmx.setup({
 				capabilities = capabilities,
+				handlers = handlers,
 				-- on_attach = on_attach,
 			})
 			-- HTML
 			lspconfig.html.setup({
 				capabilities = capabilities,
+				handlers = handlers,
 				-- on_attach = on_attach,
 			})
 			-- CSS
 			lspconfig.cssls.setup({
 				capabilities = capabilities,
+				handlers = handlers,
 				-- on_attach = on_attach,
 			})
 			-- Deno
@@ -171,6 +188,7 @@ return {
 			-- Use deno init for Each Project (LSP, Linting, Formatting)
 			lspconfig.denols.setup({
 				capabilities = capabilities,
+				handlers = handlers,
 				-- on_attach = on_attach,
 			})
 		end,

@@ -20,7 +20,7 @@ config.initial_rows = 28
 config.color_scheme = "Wez"
 
 -- Font
-config.font = wezterm.font("JetBrainsMono Nerd Font")
+config.font = wezterm.font("Lilex Nerd Font")
 config.font_size = 14.0
 
 -- Padding

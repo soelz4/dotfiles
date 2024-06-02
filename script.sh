@@ -163,6 +163,23 @@ fi
 
 sleep 2
 
+# DWM
+echo "${green}Installing SUCKLESS (DWM, ST, DMENU, SLSTATUS) into ~> ~/.config/suckless/ Directory${reset}"
+if [ -d ~/.config/suckless/ ]; then
+	echo "${green}DWM Configs Detected, Backing Up and Then Installing ...${reset}"
+	mkdir ~/.config/suckless.backup/ && mv ~/.config/suckless/* ~/.config/suckless.backup/
+	cp -r ./.config/suckless/* ~/.config/suckless/
+else
+	echo "${green}Installing DWM Configs...${reset}"
+	mkdir ~/.config/suckless/ && cp -r ./.config/suckless/* ~/.config/suckless/
+fi
+
+# sudo touch /etc/modules-load.d/modules.conf && echo "snd-pcm-oss" | sudo tee /etc/modules-load.d/modules.conf
+echo "${green}SUCKLESS ~> All the Files are Inside the ~/.config/suckless/ Directory.${reset}"
+echo "${green}SUCKLESS ~> to Install Each of them, go to the Desired Directory and Run the \"sudo make clean isntall\" Command${reset}"
+
+sleep 2
+
 # SXHKD
 if [ -d ~/.config/sxhkd/ ]; then
 	echo "${green}SXHKD Configs Detected, Backing Up and Then Installing ...${reset}"
@@ -191,30 +208,6 @@ fi
 
 sleep 2
 
-# Conky
-if [ -d ~/.config/conky/ ]; then
-	echo "${green}Conky Configs Detected, Backing Up and Then Installing ...${reset}"
-	mkdir ~/.config/conky.backup/ && mv ~/.config/conky/* ~/.config/conky.backup/
-	cp -r ./.config/conky/* ~/.config/conky/
-else
-	echo "${green}Installing Conky Configs...${reset}"
-	mkdir ~/.config/conky/ && cp -r ./.config/conky/* ~/.config/conky/
-fi
-
-sleep 2
-
-# jgmenu
-if [ -d ~/.config/jgmenu/ ]; then
-	echo "${green}jgmenu Configs Detected, Backing Up and Then Installing ...${reset}"
-	mkdir ~/.config/jgmenu.backup/ && mv ~/.config/jgmenu/* ~/.config/jgmenu.backup/
-	cp -r ./.config/jgmenu/* ~/.config/jgmenu/
-else
-	echo "${green}Installing jgmenu Configs...${reset}"
-	mkdir ~/.config/jgmenu/ && cp -r ./.config/jgmenu/* ~/.config/jgmenu/
-fi
-
-sleep 2
-
 # NeoVim
 if [ -d ~/.config/nvim/ ]; then
 	echo "${green}NeoVim Configs Detected, Backing Up and Then Installing ...${reset}"
@@ -223,6 +216,18 @@ if [ -d ~/.config/nvim/ ]; then
 else
 	echo "${green}Installing NeoVim Configs...${reset}"
 	mkdir ~/.config/nvim/ && cp -r ./.config/nvim/* ~/.config/nvim/
+fi
+
+sleep 2
+
+# Dunst
+if [ -d ~/.config/dunst/ ]; then
+	echo "${green}Dunst Configs Detected, Backing Up and Then Installing ...${reset}"
+	mkdir ~/.config/dunst.backup/ && mv ~/.config/dunst/* ~/.config/dunst.backup/
+	cp -r ./.config/dunst/* ~/.config/dunst/
+else
+	echo "${green}Installing Dunst Configs...${reset}"
+	mkdir ~/.config/dunst/ && cp -r ./.config/dunst/* ~/.config/dunst/
 fi
 
 sleep 2

@@ -3,7 +3,6 @@
 # AutoStart
 pgrep -x sxhkd >/dev/null || sxhkd &
 # picom --experimental-backend &
-# sleep 3 && conky -c "$HOME"/.config/conky/doom-one-01.conkyrc
 
 # Bar
 ~/.config/polybar/launch.sh

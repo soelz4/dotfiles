@@ -7,7 +7,6 @@ bash-completion
 bat
 bspwm
 clang
-conky
 docker-runit
 docker-compose
 dunst
@@ -20,7 +19,6 @@ github-cli
 gvim
 htop
 imagemagick
-jgmenu
 lazygit
 neofetch
 neovim

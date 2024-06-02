@@ -143,7 +143,3 @@ XF86MonBrightnessUp
 # Brightness Down
 XF86MonBrightnessDown
 	light -U 5
-
-# Toggle right click context menu.
-~button3
-	xqp 0 $(xdo id -N Bspwm -n root) && jgmenu_run

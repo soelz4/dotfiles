@@ -171,7 +171,7 @@ if [ -d ~/.config/suckless/ ]; then
 	mkdir ~/.config/suckless.backup/ && mv ~/.config/suckless/* ~/.config/suckless.backup/
 	mkdir ~/.config/suckless/
 	# dwm
-	git clone git clone https://git.suckless.org/dwm "$DWM_DIR/dwm/"
+	git clone https://git.suckless.org/dwm "$DWM_DIR/dwm/"
 	# st
 	git clone https://git.suckless.org/st "$DWM_DIR/st/"
 	# dmenu
@@ -183,7 +183,7 @@ else
 	echo "${green}Installing DWM Configs...${reset}"
 	mkdir ~/.config/suckless/
 	# dwm
-	git clone git clone https://git.suckless.org/dwm "$DWM_DIR/dwm/"
+	git clone https://git.suckless.org/dwm "$DWM_DIR/dwm/"
 	# st
 	git clone https://git.suckless.org/st "$DWM_DIR/st/"
 	# dmenu

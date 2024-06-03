@@ -31,6 +31,7 @@ polybar
 postgresql-runit
 pulseaudio
 pulseaudio-alsa
+pulsemixer
 ranger
 redis-runit
 rhythmbox

@@ -130,11 +130,14 @@ Print
 
 # volume control
 XF86AudioLowerVolume
-	amixer set Master 2%-
+	pulsemixer --change-volume -2
+	# amixer set Master 2%-
 XF86AudioRaiseVolume
-	amixer set Master 2%+
+	pulsemixer --change-volume +2
+	# amixer set Master 2%+
 XF86AudioMute
-	amixer set Master toggle
+	pulsemixer --toggle-mute
+	# amixer set Master toggle
 
 # Brightness Up
 XF86MonBrightnessUp

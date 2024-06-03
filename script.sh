@@ -164,17 +164,36 @@ fi
 sleep 2
 
 # DWM
+DWM_DIR=~/.config/suckless/
 echo "${green}Installing SUCKLESS (DWM, ST, DMENU, SLSTATUS) into ~> ~/.config/suckless/ Directory${reset}"
 if [ -d ~/.config/suckless/ ]; then
 	echo "${green}DWM Configs Detected, Backing Up and Then Installing ...${reset}"
 	mkdir ~/.config/suckless.backup/ && mv ~/.config/suckless/* ~/.config/suckless.backup/
+	mkdir ~/.config/suckless/
+	# dwm
+	git clone git clone https://git.suckless.org/dwm "$DWM_DIR/dwm/"
+	# st
+	git clone https://git.suckless.org/st "$DWM_DIR/st/"
+	# dmenu
+	git clone https://git.suckless.org/dmenu "$DWM_DIR/dmenu/"
+	# slstatus
+	git clone https://git.suckless.org/slstatus "$DWM_DIR/slstatus/"
 	cp -r ./.config/suckless/* ~/.config/suckless/
 else
 	echo "${green}Installing DWM Configs...${reset}"
-	mkdir ~/.config/suckless/ && cp -r ./.config/suckless/* ~/.config/suckless/
+	mkdir ~/.config/suckless/
+	# dwm
+	git clone git clone https://git.suckless.org/dwm "$DWM_DIR/dwm/"
+	# st
+	git clone https://git.suckless.org/st "$DWM_DIR/st/"
+	# dmenu
+	git clone https://git.suckless.org/dmenu "$DWM_DIR/dmenu/"
+	# slstatus
+	git clone https://git.suckless.org/slstatus "$DWM_DIR/slstatus/"
+	cp -r ./.config/suckless/* ~/.config/suckless/
 fi
 
-# sudo touch /etc/modules-load.d/modules.conf && echo "snd-pcm-oss" | sudo tee /etc/modules-load.d/modules.conf
+sudo touch /etc/modules-load.d/modules.conf && echo "snd-pcm-oss" | sudo tee /etc/modules-load.d/modules.conf
 echo "${green}SUCKLESS ~> All the Files are Inside the ~/.config/suckless/ Directory.${reset}"
 echo "${green}SUCKLESS ~> to Install Each of them, go to the Desired Directory and Run the \"sudo make clean isntall\" Command${reset}"
 

@@ -1,6 +1,7 @@
 archlinux-keyring
 artix-keyring
 alsa-utils-runit
+alsa-oss
 arandr
 base-devel
 bash-completion

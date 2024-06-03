@@ -81,7 +81,6 @@ const char *username(const char *unused);
 
 /* volume */
 const char *vol_perc(const char *card);
-const char *alsa_master_vol(void);
 
 /* wifi */
 const char *wifi_essid(const char *interface);

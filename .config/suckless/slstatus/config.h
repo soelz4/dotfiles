@@ -6,12 +6,6 @@ const unsigned int interval = 1000;
 /* text to show if no value can be retrieved */
 static const char unknown_str[] = "n/a";
 
-// Wrapper function definition
-const char *alsa_master_vol_wrapper(const char *unused) {
-    (void)unused; // To avoid unused parameter warning
-    return alsa_master_vol();
-}
-
 /* maximum output string length */
 #define MAXLEN 2048
 
@@ -67,13 +61,11 @@ const char *alsa_master_vol_wrapper(const char *unused) {
  * uid                 UID of current user             NULL
  * uptime              system uptime                   NULL
  * username            username of current user        NULL
- * alsa_master_vol     ALSA Master device volume       NULL
  * vol_perc            OSS/ALSA volume in percent      mixer file (/dev/mixer)
  *                                                     NULL on OpenBSD/FreeBSD
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
-
 static const struct arg args[] = {
 	/* function format          argument */
 	{ kernel_release, "[%s]", NULL },
@@ -87,8 +79,7 @@ static const struct arg args[] = {
 	// { netspeed_rx, "%sB/s  ", "eth0" },
 	// { netspeed_tx, "%sB/s  ", "eth0" },
 	// { run_command, "[VOL %4s]", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
-	// { vol_perc, "[VOL %s]", "/dev/mixer" },
-	{ alsa_master_vol_wrapper,"[VOL %s]", NULL },
+	{ vol_perc, "[VOL %s]", "/dev/mixer" },
 	{ backlight_perc, "[LIGHT %s]", "intel_backlight" },
 	{ battery_perc, "[BAT %s]",           "BAT0" },
 	{ datetime, "[%s]",           "%F %T" },

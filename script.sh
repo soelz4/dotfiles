@@ -193,7 +193,7 @@ else
 	cp -r ./.config/suckless/* ~/.config/suckless/
 fi
 
-sudo touch /etc/modules-load.d/modules.conf && echo "snd-pcm-oss" | sudo tee /etc/modules-load.d/modules.conf
+# sudo touch /etc/modules-load.d/modules.conf && echo "snd-pcm-oss" | sudo tee /etc/modules-load.d/modules.conf
 echo "${green}SUCKLESS ~> All the Files are Inside the ~/.config/suckless/ Directory.${reset}"
 echo "${green}SUCKLESS ~> to Install Each of them, go to the Desired Directory and Run the \"sudo make clean isntall\" Command${reset}"
 

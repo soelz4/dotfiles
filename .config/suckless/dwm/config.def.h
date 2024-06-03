@@ -69,9 +69,12 @@ static const char *termcmd[]  = { "wezterm", NULL };
 static const char *scrotcmd[] = { "scrot", NULL };
 static const char *roficmd[] = { "rofi", "-show", "drun", NULL };
 static const char *firefoxcmd[] = { "firefox", NULL };
-static const char *volupcmd[] = { "amixer", "set", "Master", "2%+", NULL };
-static const char *voldncmd[] = { "amixer", "set", "Master", "2%-", NULL };
-static const char *volmutecmd[] = { "amixer", "set", "Master", "toggle", NULL };
+static const char *volupcmd[] = { "pulsemixer", "--change-volume", "+2", NULL };
+static const char *voldncmd[] = { "pulsemixer", "--change-volume", "-2", NULL };
+static const char *volmutecmd[] = { "pulsemixer", "--toggle-mute", NULL };
+// static const char *volupcmd[] = { "amixer", "set", "Master", "2%+", NULL };
+// static const char *voldncmd[] = { "amixer", "set", "Master", "2%-", NULL };
+// static const char *volmutecmd[] = { "amixer", "set", "Master", "toggle", NULL };
 static const char *brightnessupcmd[] = { "light", "-A", "5", NULL };
 static const char *brightnessdncmd[] = { "light", "-U", "5", NULL };
 

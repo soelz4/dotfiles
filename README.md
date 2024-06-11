@@ -39,7 +39,7 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 - **System Init** - [runit](http://smarden.org/runit/).
 - **WM** - [DWM](https://suckless.org/).
 - **StatusBar** - [slstatus](https://tools.suckless.org/slstatus/).
-- **Menu** - [Rofi](https://github.com/davatorium/rofi).
+- **Menu** - [Rofi](https://github.com/davatorium/rofi) and [dmenu](https://tools.suckless.org/dmenu/).
 - **Compositor** - [Picom](https://github.com/yshui/picom).
 - **Shell** - [Fish](https://fishshell.com/).
 - **Terminal** - [WezTerm](https://wezfurlong.org/wezterm/).

@@ -48,7 +48,7 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 - **Notification** - [Dunst](https://github.com/dunst-project/dunst).
 - **AUR Helper** - [Yay](https://github.com/Jguer/yay).
 
-\
+
 I Use Xmonad as My Daily Work Environment/Window Manager and the Reason is ~> it is Very Minimal, Simple, Lightweight and Smooth.
 Which Means it is Based on KISS (Keep it Simple Stupid).
 

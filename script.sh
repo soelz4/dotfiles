@@ -163,50 +163,41 @@ fi
 
 sleep 2
 
-# DWM
-DWM_DIR=~/.config/suckless/
-echo "${green}Installing SUCKLESS (DWM, ST, DMENU, SLSTATUS) into ~> ~/.config/suckless/ Directory${reset}"
-if [ -d ~/.config/suckless/ ]; then
-	echo "${green}DWM Configs Detected, Backing Up and Then Installing ...${reset}"
-	mkdir ~/.config/suckless.backup/ && mv ~/.config/suckless/* ~/.config/suckless.backup/
-	mkdir ~/.config/suckless/
-	# dwm
-	git clone https://git.suckless.org/dwm "$DWM_DIR/dwm/"
-	# st
-	git clone https://git.suckless.org/st "$DWM_DIR/st/"
-	# dmenu
-	git clone https://git.suckless.org/dmenu "$DWM_DIR/dmenu/"
-	# slstatus
-	git clone https://git.suckless.org/slstatus "$DWM_DIR/slstatus/"
-	cp -r ./.config/suckless/* ~/.config/suckless/
+# Xmonad
+if [ -f ~/.xmonad/xmonad.hs ]; then
+	echo "${green}Xmonad Configs Detected, Backing Up and Then Installing ...${reset}"
+	mv ~/.xmonad/xmonad.hs ~/.xmonad/xmonad.hs.backup
+	cp ./.config/xmonad/xmonad.hs ~/.xmonad/xmonad.hs
 else
-	echo "${green}Installing DWM Configs...${reset}"
-	mkdir ~/.config/suckless/
-	# dwm
-	git clone https://git.suckless.org/dwm "$DWM_DIR/dwm/"
-	# st
-	git clone https://git.suckless.org/st "$DWM_DIR/st/"
-	# dmenu
-	git clone https://git.suckless.org/dmenu "$DWM_DIR/dmenu/"
-	# slstatus
-	git clone https://git.suckless.org/slstatus "$DWM_DIR/slstatus/"
-	cp -r ./.config/suckless/* ~/.config/suckless/
+	echo "${green}Installing Xmonad Configs...${reset}"
+	mkdir -p ~/.xmonad/ && cp ./.config/xmonad/xmonad.hs ~/.xmonad/xmonad.hs
 fi
 
-# sudo touch /etc/modules-load.d/modules.conf && echo "snd-pcm-oss" | sudo tee /etc/modules-load.d/modules.conf
-echo "${green}SUCKLESS ~> All the Files are Inside the ~/.config/suckless/ Directory.${reset}"
-echo "${green}SUCKLESS ~> to Install Each of them, go to the Desired Directory and Run the \"sudo make clean isntall\" Command${reset}"
+sleep 2
+
+# Xmobar
+if [ -d ~/.config/xmobar/ ]; then
+	echo "${green}Xmobar Configs Detected, Backing Up and Then Installing ...${reset}"
+	mkdir ~/.config/xmobar.backup/ && mv ~/.config/xmobar/* ~/.config/xmobar.backup/
+	cp -r ./.config/xmobar/* ~/.config/xmobar/
+else
+	echo "${green}Installing Xmobar Configs...${reset}"
+	mkdir ~/.config/xmobar/ && cp -r ./.config/xmobar/* ~/.config/xmobar/
+fi
+
+chmod +x ~/.config/xmobar/trayer-padding-icon.sh
+chmod +x ~/.config/xmobar/script/kernel
 
 sleep 2
 
 # SXHKD
-if [ -d ~/.config/sxhkd/ ]; then
+if [ -f ~/.config/sxhkd/sxhkdrc ]; then
 	echo "${green}SXHKD Configs Detected, Backing Up and Then Installing ...${reset}"
-	mkdir ~/.config/sxhkd.backup/ && mv ~/.config/sxhkd/* ~/.config/sxhkd.backup/
-	cp -r ./.config/sxhkd/* ~/.config/sxhkd/
+	mv ~/.config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc.backup
+	cp -r ./.config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
 else
 	echo "${green}Installing SXHKD Configs...${reset}"
-	mkdir ~/.config/sxhkd/ && cp -r ./.config/sxhkd/* ~/.config/sxhkd/
+	mkdir ~/.config/sxhkd/ && cp -r ./.config/sxhkd/sxhkdrc ~/.config/sxhkd/sxhkdrc
 fi
 
 sleep 2

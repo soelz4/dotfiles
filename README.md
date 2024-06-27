@@ -31,15 +31,15 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 - **Notification** - [Dunst](https://github.com/dunst-project/dunst).
 - **AUR Helper** - [Yay](https://github.com/Jguer/yay).
 
-## DWM
+## Xmonad
 
 <img src="screenshots/scrot-4.png" alt="Linux Fetch" align="right" width="580px">
 
 - **Distro** - **[Artix Linux](https://artixlinux.org/)**.
 - **System Init** - [runit](http://smarden.org/runit/).
-- **WM** - [DWM](https://suckless.org/).
-- **StatusBar** - [slstatus](https://tools.suckless.org/slstatus/).
-- **Menu** - [Rofi](https://github.com/davatorium/rofi) and [dmenu](https://tools.suckless.org/dmenu/).
+- **WM** - [Xmonad](https://xmonad.org/).
+- **StatusBar** - [Xmobar](https://codeberg.org/xmobar/xmobar).
+- **Menu** - [Rofi](https://github.com/davatorium/rofi).
 - **Compositor** - [Picom](https://github.com/yshui/picom).
 - **Shell** - [Fish](https://fishshell.com/).
 - **Terminal** - [WezTerm](https://wezfurlong.org/wezterm/).
@@ -48,7 +48,7 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 - **Notification** - [Dunst](https://github.com/dunst-project/dunst).
 - **AUR Helper** - [Yay](https://github.com/Jguer/yay).
 
-I Use DWM as My Daily Work Environment/Window Manager and the Reason is ~> it is Very Minimal, Simple, Lightweight and Smooth.
+I Use Xmonad as My Daily Work Environment/Window Manager and the Reason is ~> it is Very Minimal, Simple, Lightweight and Smooth.
 Which Means it is Based on KISS (Keep it Simple Stupid).
 
 ## Requirements

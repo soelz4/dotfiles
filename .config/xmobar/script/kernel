@@ -1,0 +1,4 @@
+#! /bin/bash 
+
+kernel="$(uname -r)"
+echo -e "$kernel"

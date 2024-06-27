@@ -32,7 +32,6 @@ postgresql-runit
 pulseaudio
 pulseaudio-alsa
 pulsemixer
-ranger
 redis-runit
 rhythmbox
 rofi
@@ -40,6 +39,7 @@ scrot
 shellcheck
 sxhkd
 tmux
+trayer
 w3m
 wezterm
 wget
@@ -47,3 +47,4 @@ xdo
 xdotool
 xorg
 xorg-xinit
+yazi

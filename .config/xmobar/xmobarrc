@@ -19,7 +19,7 @@ Config {
    -- layout
    , sepChar =  "%"   -- delineator between plugin names and straight text
    , alignSep = "}{"  -- separator between left-right alignment
-   , template = ">_ %UnsafeXMonadLog% }{ [%kernel%][%disku%][%kbd%][%wlan0wi%][%default:Master%][%bright%][%battery%][%date%] <fc=#ff79c6>||</fc> %trayerpad%"
+   , template = ">_ %UnsafeXMonadLog% }{ [%kernel%][%disku%][%kbd%][%wlan0wi%][%eth%][%default:Master%][%bright%][%battery%][%date%] <fc=#ff79c6>||</fc> %trayerpad%"
 
    -- general behavior
    , lowerOnStart =     True    -- send to bottom of window stack on start
@@ -53,6 +53,12 @@ Config {
                              , "--normal"   , "darkorange"
                              , "--high"     , "darkred"
                              ] 10
+
+        -- Network Interface Args RefreshRate
+        , Run Network "eth0" [] 50
+
+        -- ETH IP Address
+        , Run Com ".config/xmobar/script/eth" [] "eth" 50
 
 		-- Wireless Interface Args RefreshRate
 		, Run Wireless "wlan0" [ "-t", "WLAN <essid>" ] 10

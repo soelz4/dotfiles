@@ -1,0 +1,8 @@
+#!/bin/bash
+theIPaddress=$(ip addr show eth0 | grep "inet\b" | awk '{print $2}' | cut -d/ -f1)
+
+if [ "$theIPaddress" ]; then
+	echo "ETH eth0"
+else
+	echo "ETH N/A"
+fi

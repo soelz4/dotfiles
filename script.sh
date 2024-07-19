@@ -163,6 +163,18 @@ fi
 
 sleep 2
 
+# Herbstluftwm
+if [ -f ~/.config/herbstluftwm/autostart ]; then
+	echo "${green}Herbstluftwm Configs Detected, Backing Up and Then Installing ...${reset}"
+	mkdir -p ~/.config/herbstluftwm/ && mv ~/.config/herbstluftwm/autostart ~/.config/herbstluftwm/autostart.backup
+	cp -r ./.config/herbstluftwm/autostart ~/.config/herbstluftwm/
+else
+	echo "${green}Installing Herbstluftwm Configs...${reset}"
+	mkdir -p ~/.config/herbstluftwm/ && cp ./.config/herbstluftwm/autostart ~/.config/herbstluftwm/
+fi
+
+sleep 2
+
 # Xmonad
 if [ -f ~/.xmonad/xmonad.hs ]; then
 	echo "${green}Xmonad Configs Detected, Backing Up and Then Installing ...${reset}"
@@ -187,6 +199,7 @@ fi
 
 chmod +x ~/.config/xmobar/trayer-padding-icon.sh
 chmod +x ~/.config/xmobar/script/kernel
+chmod +x ~/.config/xmobar/script/eth
 
 sleep 2
 
@@ -269,6 +282,11 @@ echo "${red}______________________${reset}"
 echo "${green}Installing Pathogen${reset}"
 mkdir -p ~/.vim/autoload ~/.vim/bundle &&
 	curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+echo "${red}______________________${reset}"
+# Install Atuin
+echo "${green}Installing Atuin${reset}"
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
 echo "${red}______________________${reset}"
 # Install Deno

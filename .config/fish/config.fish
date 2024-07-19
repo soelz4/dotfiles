@@ -5,6 +5,7 @@ if status is-interactive
 
 	# Alias
 	alias ls "exa --long --all --icons --header"
+	alias tree "eza --tree"
 	alias cat "bat"
 	alias fzf "fzf --preview 'bat --style=numbers --color=always {}' --bind 'enter:become(vim {})'"
 	alias nv "nvim"
@@ -20,4 +21,6 @@ if status is-interactive
 	# Deno
 	set -x DENO_INSTALL ~/.deno
 	set -x PATH $DENO_INSTALL/bin $PATH
+	# Atuin
+	atuin init fish | source
 end

@@ -1,5 +1,9 @@
 # dotfiles
 
+<div align="center">
+    <img src="./assets/dots.png" width="400px" />
+</div>
+
 <img src="screenshots/scrot-2.png" width="850px">
 
 Customization Files for Linux or Other Unix-Based System. This Repository Contains My Personal Dotfiles.
@@ -83,4 +87,10 @@ chmod +x script.sh
 ./script.sh
 ```
 
-<br>![cat](https://github-production-user-asset-6210df.s3.amazonaws.com/62666332/253642655-0438a9e1-d47d-4570-873c-5ddd59f46e9e.svg)</br>
+<p align="center">
+  <picture>
+    <source srcset="https://raw.githubusercontent.com/nordtheme/assets/main/static/images/elements/separators/iceberg/footer/dark/spaced.svg" width="100%" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+    <source srcset="https://raw.githubusercontent.com/nordtheme/assets/main/static/images/elements/separators/iceberg/footer/light/spaced.svg" width="100%" media="(prefers-color-scheme: dark)" />
+    <img src="https://raw.githubusercontent.com/nordtheme/assets/main/static/images/elements/separators/iceberg/footer/dark/spaced.svg" width="100%" />
+  </picture>
+</p>

@@ -17,6 +17,7 @@ fisher
 git-runit
 github-cli
 gvim
+herbstluftwm
 htop
 imagemagick
 lazygit
@@ -44,6 +45,9 @@ w3m
 wezterm
 wget
 xdo
+xmonad
+xmonad-contrib
+xmobar
 xdotool
 xorg
 xorg-xinit

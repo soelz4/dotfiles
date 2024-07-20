@@ -37,17 +37,17 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 fi
 
 # WM
-wm=xmonad
+wm=herbstluftwm
 
 setxkbmap -layout us,ir -option grp:win_space_toggle &
 light -S 85
 # setxkbmap -layout us,ir -option grp:alt_shift_toggle &
 # picom &
 killall trayer
-sleep 2 && trayer --edge top --align right --widthtype request --SetDockType true --SetPartialStrut true \
-	--expand true --transparent true --alpha 0 --tint 0x000000 --height 40 &
+# sleep 2 && trayer --edge top --align right --widthtype request --SetDockType true --SetPartialStrut true \
+# --expand true --transparent true --alpha 0 --tint 0x000000 --height 40 &
 feh --bg-scale ~/wallpapers/Plant-Onions.png
 xsetroot -cursor_name left_ptr
 
 # Exec WM
-exec "$wm"
+exec "$wm" --locked

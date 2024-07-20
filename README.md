@@ -41,8 +41,8 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 
 - **Distro** - **[Artix Linux](https://artixlinux.org/)**.
 - **System Init** - [runit](http://smarden.org/runit/).
-- **WM** - [Xmonad](https://xmonad.org/).
-- **StatusBar** - [Xmobar](https://codeberg.org/xmobar/xmobar).
+- **WM** - [Herbstluftwm](https://herbstluftwm.org/).
+- **Bar** - [Polybar](https://github.com/polybar/polybar).
 - **Menu** - [Rofi](https://github.com/davatorium/rofi).
 - **Compositor** - [Picom](https://github.com/yshui/picom).
 - **Shell** - [Fish](https://fishshell.com/).
@@ -53,7 +53,7 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 - **AUR Helper** - [Yay](https://github.com/Jguer/yay).
 
 \
-I Use Xmonad as My Daily Work Environment/Window Manager and the Reason is ~> it is Very Minimal, Simple, Lightweight and Smooth.
+I Use Herbstluftwm as My Daily Work Environment/Window Manager and the Reason is ~> it is Very Minimal, Simple, Lightweight and Smooth.
 Which Means it is Based on KISS (Keep it Simple Stupid).
 
 ## Requirements

@@ -35,7 +35,7 @@ Customization Files for Linux or Other Unix-Based System. This Repository Contai
 - **Notification** - [Dunst](https://github.com/dunst-project/dunst).
 - **AUR Helper** - [Yay](https://github.com/Jguer/yay).
 
-## Xmonad
+## Herbstluftwm
 
 <img src="screenshots/scrot-4.png" alt="Linux Fetch" align="right" width="580px">
 
